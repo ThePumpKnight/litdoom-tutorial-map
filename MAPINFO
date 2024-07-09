@@ -1,0 +1,222 @@
+// This is the MAPINFO lump
+
+DoomEdNums
+{
+	// WEAPONS
+	22220 = PistolSpawner // Mediator M99
+	22221 = RevolverSpawner // Kriegerhand .500 S&W
+	22222 = SmgSpawner // Stiletto VCR-9
+	22223 = smsspawner // Stiletto VCR-9 (with supressor)
+	22224 = RifleSpawner // Orthos M360
+	22225 = etcriflemodule // ETC Upgrade Module for Orthos M360 rifle
+	22226 = MachinegunSpawner // Vuurkrag SW-24
+	22227 = ChaingunSpawner // XM-214
+	22228 = ShotgunSpawner // Kampfmann M650 "Broom"
+	23229 = SSGSpawner // Akrafena
+	23230 = ASGSpawner // Skallkvern-12
+	23231 = GrenadeLauncherSpawner // Chimera Multi-Purpose Launcher
+	23232 = RocketLauncherSpawner // Valkyr AT-80
+	23233 = RevenantLauncherSpawner // Revenant Rocket Laucher
+	23234 = PlasmaGunSpawner // M890 Theratorn
+	23235 = RailgunSpawner // XM920 "Galitsadi" Plasma Lance
+	23236 = BfgSpawner // "Gehenna" Blast Flux Generator 11000
+	23237 = UnmakerSpawner // Unmaker
+	23238 = Flamespawner // Flamethrower
+	23239 = FlameCannondrop // Mancubus Cannon
+	
+	
+	// MELEE WEAPONS
+	23242 = knifeSpawner // Knife
+	23243 = AxeSpawner // Fire Axe
+	23244 = ChainsawSpawner // Chainsaw
+	
+	
+	// AMMO AND AMMO BOXES
+	23246 = clip1 // 9mm ammo clip
+	23247 = clip2 // 7.62mm ammo clip
+	23248 = clip3 // 4.73mm ammo clip
+	23249 = clip1box // 9mm ammo box
+	23252 = 50ammo // Revolver cal.50 ammo
+	23253 = AmmoShell // Buckshot shells
+	23254 = AmmoShellBox // Buckshot shells box
+	23255 = AmmoSlug // Slug shells
+	23257 = ammorocket // 80mm anti-tank rocket
+	23258 = AmmoRocketBox // 80mm anti-tank rocket box
+	23259 = nuke // NUKE INCOMING!!
+	23260 = ammocell // Energy cell ammo
+	23261 = AmmoCellPack // Energy cell ammo pack
+	23262 = GASAMMO // Toxic Gas can
+	23263 = BFGCoreammo // BFG Core Energy fuel
+	
+	
+	// GRENADES
+	23264 = HandGrenades // Standard Hand Grenade
+	23265 = ClusterGrenades // Cluster Grenades
+	23267 = proxbomb // Proximity Bomb
+	23268 = GrenadeBox // Handgrenade Box
+	23269 = expbox // Explosive Box
+	
+	
+	// MEDICINES
+	23270 = bandages // Bandages
+	23271 = stimpack3 // Stimpack
+	23272 = medikit // Medikit
+	23273 = healthbackpack // Medical Backpack
+	23274 = lifemodule // Life Support Module
+	
+	
+	// DEFENCE AND FRIENDLY ITEMS
+	23275 = sentrybotteleportbeacon // Emergency Reinforcement Device
+	23276 = portablehmg // Portable HMG
+	23277 = sentrybox // Portable Sentry Turret
+	23278 = beacon // Distress Beacon
+	23279 = RecombinerPickup // Portable Recombiner
+	23280 = beartrap // Bear Trap
+	
+	
+	// SURVIVAL TOOLS & ITEMS
+	23281 = repairdevice // Weapon Repair Device
+	23282 = survivalkitpickup // Survival Kit
+	23283 = forcefieldg // Personal Force Field
+	23284 = Radar // Radar
+	23285 = nightvision // Night Vision Goggles
+	23286 = hevsuit // Anti-Rad Suit
+	
+	
+	// SOUL CRYSTALS
+	23287 = soulcrystal // Soul Crystal
+	23288 = endurancesoulcrystal // Endurance Soul Crystal
+	23289 = unfaircrystal // Unfair Crystal
+	
+	
+	// ARMOR SHARDS
+	23290 = ArmorShard // Armor Shard
+	23291 = BrokenShard // Broken Armor Shard
+	23292 = ArmorShardBoxl // Light Armor Shard Box
+	23293 = ArmorShardBoxs // Small Armor Shard Box
+	23294 = ArmorShardBoxh // Huge Armor Shard Box
+	23295 = ArmorShardBoxm // Medium Armor Shard Box
+	
+	
+	// ARMORS
+	23296 = ArmorUniform // UAC Marine Uniform
+	23297 = ArmorBoots // UAC Marine Boots
+	23298 = ArmorHelmet // UAC Marine Helmet
+	23299 = lightarmornew // Recon Body Armor [Light]
+	23300 = lightarmorknife // Survivalist´s Light Armor
+	23301 = lightarmorbelt // Soldier´s Light Armor
+	23302 = mediumarmor // Tactical Body Armor [Medium]
+	23303 = mediumarmorknife // Field Medic´s Medium Armor
+	23304 = mediumarmorbelt // Ranger´s Medium Armor
+	23305 = heavyarmornew // Assault Body Armor [Heavy]
+	23306 = heavyarmorknife // Berserker´s Heavy Armor
+	23307 = heavyarmorbelt // Demoman´s Heavy Armor
+	
+	
+	// BACKPACKS
+	23308 = emptybackpack // Backpack
+	23309 = backpacknew // Military Backpack
+	23310 = bandolier // Bandolier
+	
+	
+	//STIMULANTS
+	23311 = healstim // +25% health
+	23312 = healstim2 // +50% health
+	23313 = chaosstim // +300% health and +25% max health
+	23314 = rockstim // 40% damage resistance
+	23315 = ironstim // Temporary infinite health
+	23316 = berserkstim // Light Berserk State
+	23317 = berserkpack // Overcharged Berserk State
+	23318 = rampagestim // Slow time + no recoil
+	23319 = staminastim // Stamina regenerator
+	23320 = pheromones // Enemies run away from you
+	23321 = predatorstim // Invisibility + Night vision
+	23322 = hazardstim // Poison + Toxic floor immunity
+	23323 = antidotestim // Heals Intoxication
+	23324 = clairvoyance // Automap variant
+	
+	
+	// DUFFLE BAGS
+	23325 = surprisedufflebag // Random Duffle Bag
+	23326 = matsdufflebag // Basic Materials Duffle Bag
+	23327 = matsdufflebagsmall // Small Materials Duffle Bag
+	23328 = matsdufflebagbig // Big Materials Duffle Bag
+	23329 = meddufflebag // Basic Medical Duffle Bag
+	23330 = meddufflebagsmall // Small Medical Duffle Bag
+	23331 = meddufflebagbig // Big Medical Duffle Bag
+	23332 = mildufflebag // Basic Military Duffle Bag
+	23333 = mildufflebagsmall // Small Military Duffle Bag
+	23334 = mildufflebagbig // Big Military Duffle Bag
+	
+	
+	// CRAFTING PARTS
+	23335 = scrapmetal // Scrap Metal
+	23336 = electronicparts // Electronic Parts
+	23337 = fabric // Fabric
+	23338 = gunpowder // Gunpowder
+	23339 = EmptyVial // Empty Vial
+	23340 = BasicVial // Basic Vial
+	23341 = neutralvial // Neutral Vial
+	23342 = AcidVial // Acid Vial
+	23343 = impspike // Imp Spike
+	23344 = demonheart // Demon Heart
+	23345 = bruiserhorn // Bruiser Horn
+	23346 = cacoeye // Caco Eye
+	23347 = alphavial // Alpha Vial
+	23348 = fireessence // Fire Essence
+	23349 = chaosessence // Chaos Essence
+	23350 = batterypickup // Lithium Battery
+	
+	
+	// GUN PARTS 
+	23351 = PistolPart2 // Pistol Part
+	23352 = RevolverPart2 // Revolver Part
+	23353 = SmgPart2 // SMG Part
+	23354 = RiflePart2 // Rifle Part
+	23355 = MMGPart2 // MMG Part
+	23356 = MinigunPart2 // Minigun Part
+	23357 = ASGPart2 // ASG Part
+	23358 = ShotgunPart2 // Shotgun Part
+	23359 = GLPart2 // GL Part
+	23360 = RLPart2 // RL Part
+	
+	
+	// SPHERES AND ARTIFACTS
+	23361 = LifeSphere // Soulsphere
+	23362 = RegenSphere // Infernal Heart
+	23363 = AllSphere // DooM Relic
+	23364 = TimeSphere // Hourglass Artifact
+	23365 = EnergySphere // Megasphere
+	23366 = SuperBlurSphere // Blursphere
+	23367 = VampireSphere // Vampire´s Mask
+	23368 = artifact_container // Artifact Container
+	23369 = souljar // Soulsphere in a jar
+	23370 = regenjar // Infernal Heart in a jar
+	23371 = doomjar // DooM Relic in a jar
+	23372 = timejar // Hourglass Arifact in a jar
+	23373 = megajar // Megasphere in a jar
+	23374 = blurjar // Blursphere in a jar
+	23375 = vampirejar // Vampire´s Mask in a jar
+	
+	
+	// ALLIED MARINES AND VEHICLES
+	23377 = Marine_Rifle // Rifle Marine
+	23378 = Marine_Minigun // Minigun Marine
+	23379 = Marine_Shotgun // Shotgun Marine
+	23380 = Marine_Plasmagun // Plasma Rifle Marine
+	23381 = Marine_Rocket // Rocket Launcher Marine
+	23382 = Marine_BFG // BFG Marine
+	23383 = SentryBot // Sentry Bot
+	23384 = Bike
+	23385 = Tank
+	23386 = Mech
+	23387 = ArtilleryTank
+	23388 = AttackHelicopter
+}
+
+// EPISODE DEFINITIONS
+episode TMAP01
+{
+	name = "UAC Training Tape"
+	key = "t"
+}

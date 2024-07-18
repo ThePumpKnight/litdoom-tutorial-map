@@ -1,0 +1,127 @@
+/****************************************************************************
+
+MIT License
+
+Copyright (c) 2019 - 2021 Nash Muhandes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+****************************************************************************/
+
+extend class PDAMenu
+{
+	vector2 listadjsize;
+	vector2 contentsize;
+	vector2 contentpos;
+	vector2 senderadj;
+	double lineHeight;
+
+	virtual void PDAConfig(void)
+	{
+
+	if (bpushequipment) 
+	{lineHeight = GetFontHeight()*2.5;}
+	else lineHeight = GetFontHeight();
+	if (bpushobjectives ) 
+	{
+		listadjsize = (200, 370);
+		contentpos = (311, 54);
+		contentsize = (300, 310);
+	}
+
+	else if (bpushhelp) 
+	{
+		listadjsize = (100, 370);
+		contentpos = (221, 54);
+		contentsize = (390, 370);
+
+	}
+
+	else if (bpushequipment ) 
+	{
+		listadjsize = (200, 370);
+		contentpos = (311, 114);
+		contentsize = (300, 370);
+		senderadj = (340, 130);
+	}
+	else  
+	{
+		listadjsize = (140, 370);
+		contentpos = (261, 114);
+		contentsize = (350, 370);
+		senderadj = (300, 130);
+	}
+		DoPDAConfig
+		(
+			// Set PDA menu resolution
+			(640, 600),
+
+			// Set PDA menu font
+			"PDAFONT",
+
+			// Overall UI colour theme (in RGB)
+			(150, 120, 170),
+
+			// Font colour
+			Font.CR_LightBlue,
+
+			// Unread PDA color
+			Font.CR_tan,
+
+			// Read PDA color
+			Font.CR_ice,
+
+			// Background image
+			"graphics/PDA/PDA Background.png",
+
+			// Background image position
+			(0, 0),
+
+			// Background image size
+			(640, 600),
+
+			// PDA list window position (the list of PDAs you own)
+			(100, 124),
+
+			// PDA list window size
+			listadjsize,
+
+			// Content window position
+			contentpos,
+
+			// Content window size
+			contentsize,
+			//SENDER
+			senderadj,
+			(300,500),
+			// Number of lines to scroll with the mousewheel
+			5,
+
+			// Number of lines to scroll with the keyboard/gamepad
+			3,
+
+			// Scrollbar width
+			1,
+
+			lineHeight
+		);
+	}
+}
+
+

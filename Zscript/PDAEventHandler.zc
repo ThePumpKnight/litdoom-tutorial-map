@@ -1,0 +1,48 @@
+
+class PDAEventHandler : EventHandler
+{
+		PDAMenu menu;
+	override void NetworkProcess(ConsoleEvent e)
+	{
+		//string bind = Bindings.GetKeysForCommand("use PDAReader");
+		PlayerPawn pmo = players[e.Player].mo;
+		if (!pmo) return;
+
+		// Handle stopping currently-playing PDA sounds
+		
+
+		// Mark PDA as read
+		Array<String> strings;
+		strings.Clear();
+		e.Name.Split(strings, ":");
+
+
+		if ((strings[0] ~== "EV_GiveItem"))
+		{
+	
+			let s = desktop(pmo.player.ConversationNPC);
+		
+
+			if(s && s.hasgiven==false) 
+			{
+				s.hasgiven = true;
+				pmo.giveInventory(strings[1], 1);
+				pmo.A_startsound("misc/secret",chan_auto,CHANF_UI);
+			}
+
+		}
+		
+
+
+		
+
+		if ((strings[0] ~== "EV_TakeItem"))
+		{
+			pmo.takeinventory(strings[1], 1);
+			
+		}
+	
+		
+	}
+
+}

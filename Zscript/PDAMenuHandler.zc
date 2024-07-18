@@ -1,0 +1,247 @@
+/****************************************************************************
+
+MIT License
+
+Copyright (c) 2019 - 2021 Nash Muhandes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+****************************************************************************/
+
+//===========================================================================
+//
+// PDAMenuHandler
+// Handles PDA button clicks
+//
+//===========================================================================
+
+class PDAMenuHandler : PDAHandler
+{
+	PDAGenericMenu bmenu;
+	PDAMenu menu;
+	Actor PDAclass;
+	bool Soundplayed;
+	override void ButtonClickCommand(PDAButton caller, String command)
+	{
+		if (!menu) return;
+		if (!menu.pdaContentText || !menu.pdaContentBackground) return;
+
+		
+		 if (command == "ClickObjectives")
+		{
+			// Play activate sound
+			Menu.MenuSound("menu/click1");
+			Menu.MenuSound("menu/denied");
+			menu.bpushobjectives = true;
+			menu.bpushequipment = false;
+			menu.bpushhelp = false;
+			menu.init(bmenu);
+
+		}
+
+		 if (command == "ClickInbox")
+		{
+			// Play activate sound
+			Menu.MenuSound("menu/click1");
+			Menu.MenuSound("menu/denied");
+			menu.bpushobjectives = false;
+			menu.bpushequipment = false;
+			menu.bpushhelp = false;
+			menu.init(bmenu);
+			menu.bpushobjectives = false;
+		}
+
+		 if (command == "ClickEquipment")
+		{
+			// Play activate sound
+			Menu.MenuSound("menu/click1");
+			Menu.MenuSound("menu/denied");
+			menu.bpushequipment = true;
+			menu.bpushhelp = false;
+			menu.bpushobjectives = false;
+			menu.init(bmenu);
+			menu.bpushobjectives = false;
+		}
+
+		 if (command == "ClickHelp")
+		{
+			// Play activate sound
+			Menu.MenuSound("menu/click1");
+			Menu.MenuSound("menu/denied");
+			menu.bpushhelp = true;
+			menu.bpushequipment = false;
+			menu.bpushobjectives = false;
+			menu.init(bmenu);
+			menu.bpushobjectives = false;
+		}
+		// Parse the command
+		Array<String> strings;
+		strings.Clear();
+		command.Split(strings, ":");
+
+		// Return if the array has less than 2 strings
+		if (strings.Size() < 2) return;
+	
+
+
+		if ((strings[0] ~== "ActivatePDA"))
+		{
+			// Play activate sound
+			Menu.MenuSound("menu/click1");
+
+			// Mark as read
+			let pda = PDA(menu.pmo.FindInventory(strings[1], true));
+		
+			if (pda)
+			{
+	
+				EventHandler.SendNetworkEvent("EV_MarkPDARead:" .. strings[1]);
+			}
+
+
+			class<PDA> cls = strings[1];
+
+			String stxt = GetDefaultByType((class<PDA>)(cls)).sender;
+			String subtxt = GetDefaultByType((class<PDA>)(cls)).subject;
+			String txt = GetDefaultByType((class<PDA>)(cls)).pdaText;
+			String pdaText = StringTable.Localize(txt);
+			
+			
+			// Update content image and text
+			menu.pdaContentBackground.image = GetDefaultByType((class<PDA>)(cls)).pdaImage;
+			menu.pdaContentText.SetText(pdaText);
+			menu.pdasubject.SetText(subtxt);
+			menu.pdasender.SetText(stxt);
+
+			// Update current selection
+			int index = menu.pdaList.items.Find(PDAColoredButton(caller));
+			menu.pdaList.currentSelection = index;
+			menu.pdaList.UpdateSelection();
+
+			// Play sound if available
+			Sound snd = GetDefaultByType((class<PDA>)(cls)).pdaAudio;
+			if (snd)
+			{
+				// Find the PDA reader and play the sound from it (lol hack)
+				let pdaReader = menu.pmo.FindInventory("PDAReader", true);
+				if (pdaReader && menu.pmo == players[consoleplayer].mo)
+				{
+					pdaReader.A_StartSound(snd, CHAN_VOICE, CHANF_UI, snd_menuvolume, ATTN_NONE);
+				}
+			}
+			else
+			{
+				// Stop all sounds when clicking on a soundless PDA
+				EventHandler.SendNetworkEvent("EV_StopPDASound");
+			}
+		}
+	}
+
+	override void ElementHoverChanged(PDAElement caller, string command, bool unhovered)
+	{
+		if (!unhovered && !caller.disabled)
+		{
+			Menu.MenuSound("PDA/Hover");
+		}
+		Super.ElementHoverChanged(caller, command, unhovered);
+	}
+/*
+override void buttonRClickCommand(PDAButton caller, string command) {
+
+	
+		Array<String> strings;
+		strings.Clear();
+		command.Split(strings, ":");
+	
+			//Menu.pdaListReadColor = menu.fnt.CR_Red;
+	
+		let pda = PDA(menu.pmo.FindInventory(strings[1], true));
+			if (pda)
+			{
+				EventHandler.SendNetworkEvent("EV_DropPDA:" .. strings[1]);
+				
+			}
+		
+		menu.close();
+	
+		
+		super.buttonRClickCommand(caller, command);
+}
+*/
+override void buttonHeldCommand(PDAButton caller, string command) {
+
+	
+		Array<String> strings;
+		strings.Clear();
+		command.Split(strings, ":");
+		//soundplayed = false;
+			
+	
+		let pda = PDA(menu.pmo.FindInventory(strings[1], true));
+			if (pda)
+			{
+				if(pda.value > 0){EventHandler.SendNetworkEvent("EV_TakePDA:" .. strings[1]);menu.restart = true; }//menu.menusound("pda/sent");}
+				if(pda.value <= 0)EventHandler.SendNetworkEvent("EV_DropPDA:" .. strings[1]);
+				
+			}
+		menu.close();
+			
+	
+		
+		super.buttonHeldCommand(caller, command);
+}
+	override void buttonHalfHeldCommand(PDAButton caller, string command) {
+	caller.curButtonState = caller.ButtonState_Click;
+
+
+			Array<String> strings;
+		strings.Clear();
+		command.Split(strings, ":");
+			class<PDA> cls = strings[1];
+			int val = GetDefaultByType((class<PDA>)(cls)).value;
+			string up[4];
+				up[0] = "Uploading.";
+				up[1] = "Uploading..";
+				up[2] = "Uploading...";
+				up[3] = "Uploading";
+			
+			string cred = " Credits";
+			string value = "Uplink Value: ";
+			if (val >0) 
+				{
+					int i;
+					if (i >2)i=0;
+					if((menu.MenuTime()%32) < 8) {menu.pdasender.SetText(up[0]);}
+					if((menu.MenuTime()%32) >= 8 && (menu.MenuTime()%16) <= 16) menu.pdasender.SetText(up[1]);			
+					if((menu.MenuTime()%32) >= 16 && (menu.MenuTime()%16) <= 24) menu.pdasender.SetText(up[2]);
+					if((menu.MenuTime()%32) >= 24 && (menu.MenuTime()%16) <= 32) menu.pdasender.SetText(up[3]);
+					
+					if(!soundplayed)menu.menusound("pda/sending");
+				}
+			else {menu.pdasender.SetText("Dropping");}//menu.menusound("pda/discard");}
+
+			menu.pdasubject.SetText(String.format("%s%d%s",value, val,cred));
+	menu.UIColor = Color(255, 0, 0);
+	if (val >0) {Menu.pdaListReadColor = menu.fnt.CR_green;}
+	else Menu.pdaListReadColor = menu.fnt.CR_red;
+		soundplayed = true;
+		super.buttonhalfHeldCommand(caller, command);
+}
+
+}

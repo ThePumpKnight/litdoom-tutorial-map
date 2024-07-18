@@ -1,0 +1,410 @@
+
+class Desktop : Actor
+{
+	Default
+	{		
+		-SOLID
+		Height 38;
+		Radius 12;
+		+usespecial;
+		+shootable;
+		+NoDamage;
+		+noblood;
+		+dontthrust;
+	//$Category﻿ Terminal
+	}
+	bool hasgiven;
+	bool user_islocked;
+	string User_giveitem;
+	string User_script; //can active ACS script
+	string User_Content; //mapper enters content on map object
+	string User_password;
+	
+	States
+	{
+		Spawn:
+			DTOP A 0;
+		 	TNT1 A -1;
+			Stop;
+	}
+
+	override bool Used(Actor user)
+	{
+		
+		busespecial = false; //this pertains to an interaction system I have that is stripped out here.
+		A_startsound("keyboard");
+		user.player.ConversationNPC = self;
+
+
+			
+		// [JGP] Here = was used instead of ==. For some reason
+		// GZDoom allows that, which is wrong, so be careful:		
+		if (user.player == players[consoleplayer]) 
+		{ 
+		
+			  Menu.SetMenu("DesktopMenu"); 
+		}
+		
+		//user.player.ConversationNPC = null;
+	
+		if (user_script.length() != 0)
+		{
+			
+			ACS_NamedExecute(user_script); //can activate a script if desired. 
+		}
+		return true;
+	}
+}
+
+
+
+
+class DesktopMenu : PDAMenu
+{
+	string pcText;
+	Desktop s;
+
+	TextureID windowtex;
+	TextureID wallpaper;
+	int startdelay;
+	int clipper;	// this is a value that increases over a number of tics to serve
+					// as a 'cascading text' animation.
+	double startscale; //start and end scale of elements during opening animation
+	double endscale;
+	int rise; //incremantal value that will be added to the window position to animate it moviing
+	int slowrise; //same but slower. 
+	double pcalpha;
+	double fullTextHeight;
+	int adjustx,adjusty;
+	int barwidth;
+	bool isClosing; // [JGP] renamed 'CLOSER' to this; arguably a more common naming convention
+	
+	// [JGP] These values are used by the PDAConfig() function below
+	// to determine the size of the background and the window.
+	// You should be able to adjust these to change the size as needed:
+	enum DesktopValues
+	{
+		DESKTOPPOSX = 40,
+		DESKTOPPOSY = 0,
+		DESKTOPWIDTH = 740,	// width of the images (both desktop and window since they seem to be the same)
+		DESKTOPHEIGHT = 600,	// height of the images (both desktop and window since they seem to be the same)
+		TEXTPOSX = 80,		// text area horizontal position (relative to desktop)
+		TEXTPOSY = 182,		// text area vertical position (relative to desktop)
+		TEXTWIDTH = 422,	// text area width (fits inside the window image)
+		TEXTHEIGHT = 182,	// text area height (fits inside the window image)
+	}
+	
+	enum NoteValues
+	{
+
+		nTEXTPOSX = 160,		// text area horizontal position (relative to desktop)
+		nTEXTPOSY = 200,
+		nTEXTWIDTH = 300,	// text area width (fits inside the window image)
+
+	}
+	override void Init(Menu parent)
+	{
+		PDAGenericMenu.Init(parent);
+		pmo = players[consoleplayer].mo;
+		
+		s = desktop(players[consoleplayer].ConversationNPC);
+
+		PDAConfig();
+
+		if (s)
+		{	
+			pcText = StringTable.Localize(s.user_content);
+			wallpaper = TexMan.CheckForTexture("dtop", TexMan.Type_Any);
+			windowtex = TexMan.CheckForTexture("dtwin", TexMan.Type_Any);
+			if (s.user_giveitem.length() >0)
+			{
+				EventHandler.SendNetworkEvent("EV_GiveItem:" .. s.user_giveitem);
+			}
+		}
+	
+	
+		// Create the content frame
+		pdaContentText = PDAContentText(new('PDAContentText').Init(pdaContentPos, pdaContentSize, self));
+		if (pdaContentText)
+		{
+			pdaContentText.SetText(pcText);
+			// [JGP] Record the height of the text frame. This will be the
+			// target height; the height of the frame is initially 0
+			// and is incremented in Drawer() until it reaches this value:
+			fullTextHeight = pdaContentSize.y;
+		}
+		
+		clipper = 0; //[JGP] Start at 0 because it'll be dependent on the frame size
+		rise = 0;
+		slowrise = 0;
+		pcalpha = 0.0;
+		
+		DontDim = true;
+		menuactive = OnNoPause;
+		startscale = 0.8;
+		endscale = 1.5;
+	}
+	
+	// [JGP] Note, this required me to change this function
+	// to be virtual in PDAConfig.zc. In the current version
+	// of this library it's not virtual.
+	override void PDAConfig()
+	{		
+
+		DoPDAConfig
+		(
+			// Set PDA menu resolution
+			(DESKTOPWIDTH, DESKTOPHEIGHT),
+
+			// Set PDA menu font
+			"PDI",
+
+			// Overall UI colour theme (in RGB)
+			// [JGP] Does not affect this window
+			(255, 255, 255),
+
+			// Font colour
+			Font.CR_Untranslated,
+
+			// Unread PDA color
+			Font.CR_Untranslated,
+
+			// Read PDA color
+			Font.CR_Untranslated,
+
+			// Background image
+			"", //[JGP] The actual image is drawn in Drawer()
+
+			// Background image position
+			(DESKTOPPOSX, DESKTOPPOSY),
+
+			// Background image size
+			(DESKTOPWIDTH, DESKTOPHEIGHT),
+
+			// PDA list window position
+			(0, 0), // [JGP] Unused because this doesn't have a list
+
+			// PDA list window size
+			(0, 0), // [JGP] Unused because this doesn't have a list
+
+			// Content window position
+			(DESKTOPPOSX + TEXTPOSX, DESKTOPPOSY + TEXTPOSY),
+
+			// Content window size
+			(TEXTWIDTH, TEXTHEIGHT),
+				//SENDER
+			(280,114),
+			(200,100),
+			// Number of lines to scroll with the mousewheel
+			2,
+
+			// Number of lines to scroll with the keyboard/gamepad
+			1,
+
+			// Scrollbar width
+			3,
+
+			GetFontHeight()
+		);
+	}
+
+	override void Ticker()
+	{
+		bool hasconfig;
+		//[DO]increase the boundary where the text content is clipped. This creates
+		// the cascading text animation when opening. 
+		// [JGP] Clamp it to the target full height of the text:
+		if (startdelay > 15)clipper = Clamp(clipper + 14, clipper, fullTextHeight);
+		if(startdelay < 40)startdelay++;
+		//if(startdelay >= 29 && !hasconfig){barwidth=3;PDAConfig();hasconfig=true;}
+		//while the startscale is less than endscale perform these actions
+		//it looks like these aren't actually used for actual scaling of graphics
+		//in this version, rather a time window with which to animate - so the names
+		//are a little confusing. 
+		if (endscale > startscale && startscale < 1.5)
+		{
+			S_StartSound("menu/click", CHAN_7, CHANF_UI, 0.1);
+			startscale += 0.09;
+			//Scale += 0.1;
+			// [JGP] Clamp the value to make sure the window doesn't
+			// extend too far verticaly:
+			rise = Clamp(rise + 50, rise, backgroundSize.y);
+			slowrise += 20;
+			pcalpha += 0.12;
+		}
+		
+		//failsafe to ensure the final scale isnt above 1.5
+		//this should really have 'endscale' replace '1.5'
+		if (startscale >= endscale )
+		{
+			startscale = endscale;
+		}
+		//if the menu is closing decrease the alpha and window positions
+		//to animate
+		if (isClosing) 
+		{
+			pcalpha -= 0.05; 	
+			rise -= 8;
+		}
+		// when alpha is less than 0.2, actaully close the menu
+		if (isClosing && pcalpha <=0.2)
+		{
+			Close();
+		}
+		
+		/*	if (!pmo)
+		{
+			Console.Printf("Error: Menu without player pawn");
+			Close();
+			return;
+		}*/
+		Super.Ticker();
+	}
+	
+	bool CheckControl(UIEvent ev, String control, int type)
+	{
+		int c1, c2;
+		[c1, c2] = Bindings.GetKeysForCommand(control);
+
+		String keynames = Bindings.NameKeys(c1, c2);
+
+		Array<String> keys;
+		keynames.Split(keys, ", ");
+
+		String keychar = String.Format("%c", ev.KeyChar);
+		keychar = keychar.MakeUpper();
+
+		for (int i = 0; i < keys.Size(); i++)
+		{
+			if (keys[i].Length() > 1) { continue; } // Skip named keys
+
+			if (keys[i].ByteAt(0) == keychar.ByteAt(0))
+			{
+				MenuEvent(type, false);
+				return true;
+			}
+		}
+
+		return false;
+	}
+	
+	// [JGP] Note that this will mess up the ability to scroll
+	// the text with arrow keys, if those are bound to movement:
+	override bool OnUIEvent(UIEvent ev)
+	{
+		if (ev.type == UIEvent.Type_LButtonDown || ev.Type == UIEvent.Type_KeyDown)
+		{	
+			isClosing = true;
+		}
+		
+		if (ev.Type == UIEvent.Type_KeyDown || ev.Type == UIEVent.Type_Char)
+		{
+			
+			CheckControl(ev, "+moveleft", MKEY_Left);
+			CheckControl(ev, "+moveright", MKEY_Right);
+			CheckControl(ev, "+use", MKEY_Enter);
+			CheckControl(ev, "+forward", MKEY_Up);
+			CheckControl(ev, "+back", MKEY_Back);
+		}
+
+		// [JGP] It's important to return the super call
+		// so that the text scrolling works:
+		return super.OnUIEvent(ev);
+	}
+
+	// [JGP] Slighly edited so that you can scroll the text 
+	// with Up/Down keys, not just PgUp/PgDn. Also added
+	// content scrolling from PDAMenu:
+	override bool MenuEvent(int mkey, bool fromcontroller)
+	{
+		if (pdaContentText)
+		{
+			switch (mkey)
+			{
+				// Scroll content text
+				case MKEY_Up:
+				case MKEY_PageUp:
+					pdaContentText.ScrollUp(keyScrollAmount);
+					break;
+				case MKEY_Down:
+				case MKEY_PageDown:
+					pdaContentText.ScrollDown(keyScrollAmount);
+					break;
+				// [JGP] Close with Enter, Back or mouse click:
+				
+				case MKEY_Enter:
+				case MKEY_Back:
+				case MOUSE_Click:
+					isClosing = true;
+					return true;					
+					break;
+				default:
+					break;
+			}
+		}
+		return PDAGenericMenu.MenuEvent(mkey, fromcontroller);
+	}
+
+	override void Drawer()
+	{	
+		// [JGP] Draw wallpaper and window texture. 
+		// All pos and size values have to be ints.
+		// I made the window and the wallpaper the same size,
+		// since the images seem to be designed this way and
+		// it was easier. Not entirely sure why they were slightly
+		// different in your version.
+		
+		// Instead of defining values explicitly, I'm using the
+		// backgroundPos and backgroundSize values defined earlier
+		// in the PDAConfig() call, so they're already stored
+		// in this menu's fields:
+		
+		
+
+
+		if (wallpaper)
+		{
+
+		
+
+			Screen.DrawTexture(
+				wallpaper, 
+				false, 
+				int(backgroundPos.x), int(backgroundPos.y), 
+				DTA_Alpha, pcalpha, 
+				DTA_VirtualWidth, int(backgroundSize.x), 
+				DTA_VirtualHeight,int(backgroundSize.y),
+				// [JGP] This is important to make it look the same on all 
+				// resolutions (16:9, 21:9, etc.), otherwise it'll scale
+				// differently from the text:
+				DTA_FullscreenScale, FSMode_ScaleToFit43
+			);
+		}
+		
+		if (windowtex)
+		{
+			
+			Screen.DrawTexture(
+				windowtex, 
+				false, 
+				int(backgroundPos.x), int(backgroundPos.y), 
+				DTA_DestHeight, int(backgroundSize.y * 0.35) + rise, 
+				DTA_Alpha, pcalpha-0.2, 
+				DTA_VirtualWidth, int(backgroundSize.x), 
+				DTA_VirtualHeight,int(backgroundSize.y),
+				DTA_FullscreenScale, FSMode_ScaleToFit43
+			);
+		}
+		
+		// [JGP] Change text alpha and size of the pdaContentText frame
+		// to achieve the cascasind effect for the text:
+		if (pdaContentText)
+		{
+		
+			pdaContentText.alpha = pcalpha;
+			pdaContentText.box.size.y = clipper;
+		}
+
+		super.Drawer();
+	}
+}

@@ -1,0 +1,557 @@
+/****************************************************************************
+
+MIT License
+
+Copyright (c) 2019 - 2021 Nash Muhandes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+****************************************************************************/
+
+//===========================================================================
+//
+// PDAMenu
+// A custom PDA menu
+// Powered by ZForms
+// ZForms is created by Gutawer and phantombeta
+//
+//===========================================================================
+
+class PDAMenu : PDAGenericMenu
+{
+	PDAMenuHandler handler;
+	Font fnt;
+	PlayerPawn pmo;
+	bool restart, bpushobjectives,bpushequipment,bpushhelp;
+	bool hasticked;
+	int restimer;
+	// Colors
+	int fntColor;
+	int pdaListUnreadColor;
+	int pdaListReadColor;
+	Color UIColor;
+	array<mail>maillist;
+	String backgroundPic;
+
+	// Sizes and positions
+	int baseResWidth;
+	int baseResHeight;
+	Vector2 backgroundPos;
+	Vector2 backgroundSize;
+	Vector2 pdaListPos;
+	Vector2 pdaListSize;
+	Vector2 SenderPos;
+	Vector2 SenderSize;
+	Vector2 pdaContentPos;
+	Vector2 pdaContentSize;
+	double openalpha;
+	// Misc variables
+
+	// How many number of lines to scroll with the mousewheel
+	int mouseScrollAmount;
+
+	// How many number of lines to scroll with the keyboard/gamepad
+	int keyScrollAmount;
+
+	// Width of the scrollbar
+	double scrollbarWidth;
+
+	// Widgets
+
+	// PDA list (left)
+	PDAOwnedPDAsList pdaList;
+	//ObjectiveOwnedList OBJList;
+
+	// PDA content (right)
+	PDAImage pdaContentBackground;
+	PDAContentText pdaContentText;
+	PDASenderText pdasender;
+	PDASubjectText pdasubject;
+	int incr;
+	int pdaclipper;
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+	
+
+
+
+	override bool OnUIEvent(UIEvent ev)
+	{
+	String activateMenu;
+    Array<int> keys;
+        
+    Bindings.GetAllKeysForCommand(keys, "use PDAReader");
+    activateMenu = KeyBindings.NameAllKeys(keys);
+    
+    if(ev.type == UIEvent.Type_KeyDown && activateMenu.IndexOf(ev.KeyString, 0) >= 0)
+    {
+        Menu.MenuSound("PDA/Close");
+        Close();
+        return True;
+    }
+
+		if (ev.type == UIEvent.Type_LButtonDown)
+		{	
+			pdaclipper = 0;
+		}
+		//if (ev.type == UIEvent.Type_KeyDown) {
+        //close();return true;}
+		return super.OnUIEvent(ev);
+	}
+		
+	
+	override void Init(Menu parent)
+	{
+
+		Dontdim = false;
+		Dontblur = false;
+	
+		if(!hasticked)
+		{
+			incr = -280; 
+			Menu.MenuSound("PDA/Open");
+		}
+		
+		Super.Init(parent);
+		
+		pmo = players[consoleplayer].mo;
+
+		PDAConfig();
+
+		
+		// Assign the PDAMenuHandler
+		handler = new('PDAMenuHandler');
+		handler.menu = self;
+		
+
+		//Create Objectives Button
+		
+		
+
+		// Create the PDA background
+		let background = new('PDAImage').Init(backgroundPos, backgroundSize, backgroundPic, PDAImage.AlignType_TopLeft);
+		if(!hasticked) background.alpha = 0;
+		background.Pack(mainFrame);
+
+		// Create the PDA list
+		pdaList = PDAOwnedPDAsList(new('PDAOwnedPDAsList').Init(pdaListPos, pdaListSize, self, "ActivatePDA"));
+		pdalist.alpha = 0;
+		// Populate the PDA list
+		PopulatePDAList();
+
+		// Create the content background frame
+		pdaContentBackground = new('PDAImage').Init((pdaContentPos.x-20,pdaContentPos.y), (pdaContentSize.x+20,pdaContentSize.y), "", PDAImage.AlignType_top);
+		 pdaContentBackground.alpha = 0;
+		pdaContentBackground.Pack(mainFrame);
+
+		// Create the content frame
+		pdaContentText = PDAContentText(new('PDAContentText').Init((pdaContentPos.x,pdaContentPos.y+60), (pdaContentSize.x,pdaContentSize.y), self));
+		pdasender = PDASenderText(new('PDASenderText').Init((SENDERPOS), (SENDERSIZE), self));
+		pdasubject = PDASubjectText(new('PDASubjectText').Init((SENDERPOS.x,senderpos.y + 15), (SENDERSIZE), self));
+		pdaContentText.box.size.y = 0;
+		pdaclipper = 0;
+		pdaContentText.alpha = 0;
+		// Always highlight the first entry when the menu spawns
+		if (pdaList)
+		{
+			pdaList.UpdateSelection();
+		}
+
+		//Navigation Buttons
+
+		let EquipButton = PDAOwnedPDAButton(new('PDAOwnedPDAButton').init
+		(
+			(20, 210),
+			(80, 20), "",
+			cmdHandler: handler,
+			command:"ClickEquipment"
+		));
+		
+		
+
+		EquipButton.SetTexture
+		(
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			""
+		);
+		EquipButton.fillColor = UIColor;
+
+			EquipButton.Pack (mainFrame);
+
+			let equiptxt = new('EquipmentLabel').Init
+		(
+			(25, 212),
+			(0, 0),
+			text: "Equipment",
+			fnt: "nchsmallerfont",
+			wrap: false,
+			autoSize: true,
+			textColor: fntColor
+		);
+		equiptxt.Pack(mainFrame);
+
+
+		let ObjButton = PDAOwnedPDAButton(new('PDAOwnedPDAButton').init
+		(
+			(20, 190),
+			(80, 20), "",
+			cmdHandler: handler,
+			command:"ClickObjectives"
+		));
+		
+		ObjButton.SetTexture
+		(
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			""
+		);
+		ObjButton.fillColor = UIColor;
+
+			ObjButton.Pack (mainFrame);
+
+			let txt = new('ObjectiveLabel').Init
+		(
+			(25, 192),
+			(0, 0),
+			text: "objectives",
+			fnt: "nchsmallerfont",
+			wrap: false,
+			autoSize: true,
+			textColor: fntColor
+		);
+		txt.Pack(mainFrame);
+		// Play menu open sound
+
+		let InboxButton = PDAOwnedPDAButton(new('PDAOwnedPDAButton').init
+		(
+			(20, 170),
+			(80, 20), "",
+			cmdHandler: handler,
+			command:"ClickInbox"
+		));
+		
+		InboxButton.SetTexture
+		(
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			""
+		);
+		InboxButton.fillColor = UIColor;
+
+			InboxButton.Pack (mainFrame);
+
+			let inboxtxt = new('InboxLabel').Init
+		(
+			(25, 172),
+			(0, 0),
+			text: "Inbox",
+			fnt: "nchsmallerfont",
+			wrap: false,
+			autoSize: true,
+			textColor: fntColor
+		);
+		inboxtxt.Pack(mainFrame);
+		// Play menu open sound
+
+		let HelpButton = PDAOwnedPDAButton(new('PDAOwnedPDAButton').init
+		(
+			(20, 230),
+			(80, 20), "",
+			cmdHandler: handler,
+			command:"ClickHelp"
+		));
+		
+		
+
+		HelpButton.SetTexture
+		(
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			"TNT1A0",
+			""
+		);
+		HelpButton.fillColor = UIColor;
+
+			HelpButton.Pack (mainFrame);
+
+			let helptxt = new('HelpLabel').Init
+		(
+			(25, 232),
+			(0, 0),
+			text: "Help",
+			fnt: "nchsmallerfont",
+			wrap: false,
+			autoSize: true,
+			textColor: fntColor
+		);
+		helptxt.Pack(mainFrame);
+
+		hasticked = true;
+		
+	}
+
+
+	override void Ticker(void)
+	{
+
+
+		restimer++;
+		
+		if (pdaContentText){
+		pdaContentText.box.size.y = pdaclipper;
+		pdaclipper = Clamp(pdaclipper + 14, pdaclipper, pdaContentSize.y-60);
+		pdaContentText.alpha+=0.03;}
+		if (pdalist) {pdalist.alpha +=0.03;if(incr <0) incr +=20;}
+		if (!pmo)
+		{
+			Console.Printf("Error: PDAMenu without player pawn");
+			Close();
+			return;
+		}
+
+	mainFrame.setBox((incr, 0),(640,600));
+	mainFrame.setBaseResolution((expander,expanderY));
+	//SetBaseResolution((expander,expanderY));
+	Super.Ticker();
+	}
+
+
+
+
+	override bool MenuEvent(int mkey, bool fromcontroller)
+	{
+
+		if(mkey == 70){Menu.MenuSound("PDA/Close");
+					Close();}
+		if (pdaContentText)
+		{
+			switch (mkey)
+			{
+				// PDA selection
+				case MKEY_Up:
+					pdaList.SelectPreviousItem();
+					break;
+				case MKEY_Down:
+					pdaList.SelectNextItem();
+					break;
+
+				// Read a PDA
+				case MKEY_Enter:
+					if (pdaList.items.Size() > 0 && pdaList.currentSelection >= 0)
+					{
+						handler.ButtonClickCommand(pdaList.items[pdaList.currentSelection], pdaList.items[pdaList.currentSelection].command); pdaclipper = 0;
+					}
+					break;
+
+				// Scroll content text
+				case MKEY_PageUp:
+					pdaContentText.ScrollUp(keyScrollAmount);
+					break;
+				case MKEY_PageDown:
+					pdaContentText.ScrollDown(keyScrollAmount);
+					break;
+
+				// Close the menu and play the close menu sound
+				case MKEY_Back:
+					Menu.MenuSound("PDA/Close");
+					Close();
+					return true;
+
+				default:
+					break;
+			}
+		}
+
+		return Super.MenuEvent(mkey, fromcontroller);
+	}
+
+	override void OnDestroy(void)
+	{
+		PlayerInfo p = players[consoleplayer];
+		if (pmo && p && players[consoleplayer].mo)
+		{
+			// Stop any PDA sounds currently playing when exiting the menu
+			let pdaReader = pmo.FindInventory("PDAReader", true);
+			if (pdaReader && pmo == players[consoleplayer].mo)
+			{
+				EventHandler.SendNetworkEvent("EV_StopPDASound");
+			}
+		}
+
+		Super.OnDestroy();
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+
+	void DoPDAConfig(Vector2 baseRes, String fntName,
+		Vector3 uiClr, int fntClr, int unreadClr, int readClr,
+		String bgPic, Vector2 bgPos, Vector2 bgSize,
+		Vector2 listPos, Vector2 listSize,
+		Vector2 ctPos, Vector2 ctSize,
+		Vector2 sendPos, Vector2 sendSize,
+		int mScrAmount, int kScrAmount,
+		double scrBarWidth,double lineheight)
+	{
+		baseResWidth = int(baseRes.X);
+		baseResHeight = int(baseRes.Y);
+		SetBaseResolution((baseResWidth, baseResHeight));
+
+		fnt = Font.GetFont(fntName);
+
+		UIColor = Color(int(uiClr.X), int(uiClr.Y), int(uiClr.Z));
+		fntColor = fntClr;
+		pdaListUnreadColor = unreadClr;
+		pdaListReadColor = readClr;
+
+		backgroundPic = bgPic;
+		backgroundPos = bgPos;
+		backgroundSize = bgSize;
+
+		pdaListPos = listPos;
+		pdaListSize = listSize;
+		
+		senderpos = sendPos;
+		sendersize = sendSize;
+		pdaContentPos = ctPos;
+		pdaContentSize = ctSize;
+
+		mouseScrollAmount = mScrAmount;
+		keyScrollAmount = kScrAmount;
+
+		scrollbarWidth = scrBarWidth;
+	}
+
+	//===========================================================================
+	//
+	//
+	//
+	//
+	//===========================================================================
+
+	void PopulatePDAList(void)
+	{
+		if (!pdaList) return;
+
+		// Build array of PDAs
+		Array<Inventory> myPDAs;
+		myPDAs.Clear();
+		int totalPDAs = GetTotalPDAs();
+		for (Inventory item = pmo.Inv; item != NULL; item = item.Inv)
+		{
+			if (bpushobjectives == true)
+			{
+				if (item is "Si_Objective")
+				{
+					myPDAs.Push(item);
+				}
+			}
+
+			else if (bpushequipment == true) 
+			{
+				if (item is "Equipment_Codex")
+				{
+					myPDAs.Push(item);
+				}
+			}
+
+			else if (bpushhelp == true) 
+			{
+				if (item is "Help_Codex")
+				{
+					myPDAs.Push(item);
+				}
+			}
+
+			else
+			{
+				if (item is "Mail")
+			{
+				myPDAs.Push(item);
+			}
+			}
+		}
+
+		// Sort PDA array alphabetically
+		for (int x = 0; x < myPDAs.Size(); x++)
+		{
+			for (int y = 0; y < myPDAs.Size() - 1; y++)
+			{
+				if (StringTable.Localize(myPDAs[y].GetTag()) > StringTable.Localize(myPDAs[y + 1].GetTag()))
+				{
+					let p = myPDAs[y + 1];
+					myPDAs[y + 1] = myPDAs[y];
+					myPDAs[y] = p;
+				}
+			}
+		}
+
+		// Add the PDAs to the PDA list
+		for (int i = 0; i < myPDAs.Size(); i++)
+		{
+			if (myPDAs[i])
+			{
+				pdaList.AddLine(myPDAs[i].GetClassName());
+			}
+		}
+	}
+	
+	int GetTotalPDAs(void)
+	{
+		int totalPDAs = 0;
+		for (Inventory item = pmo.Inv; item != NULL; item = item.Inv)
+		{
+			if (item is "PDA") totalPDAs++;
+		}
+		return totalPDAs;
+	}
+	/*
+	int GetTotalObjectives(void)
+	{
+		int totalObjectives = 0;
+		for (Inventory item = pmo.Inv; item != NULL; item = item.Inv)
+		{
+			if (item is "Objective1") totalObjectives++;
+		}
+		return totalObjectives;
+	}
+	*/
+	int GetFontHeight(void)
+	{
+		if (!fnt) return 0;
+		return fnt.GetHeight();
+	}
+}

@@ -1,0 +1,9 @@
+[enu default]
+
+Terminal_Example = 	
+					"\ciThis is an example using the LANGUAGE lump\n\n"  
+					"\cwHere you can use more advanced formating like coloured text...\n\n"
+					"Erm...I think that's the only formatting benefit actually...\n\n"
+					"Here are the words of Fred Durst to make the text long enough to scroll...\n\n"
+					"Keep\n\nRollin'\n\nRollin'\n\nRollin'\n\nRollin'\n\nWhat?\n\n"
+					"Keep\n\nRollin'\n\nRollin'\n\nRollin'\n\nRollin'";

@@ -1,13 +1,9 @@
 [enu default]
-
-Terminal_Example = 	
-					"\ciThis is an example using the LANGUAGE lump\n\n"  
-					"\cwHere you can use more advanced formating like coloured text...\n\n"
-					"Erm...I think that's the only formatting benefit actually...\n\n"
-					"Here are the words of Fred Durst to make the text long enough to scroll...\n\n"
-					"Keep\n\nRollin'\n\nRollin'\n\nRollin'\n\nRollin'\n\nWhat?\n\n"
-					"Keep\n\nRollin'\n\nRollin'\n\nRollin'\n\nRollin'";
 					
 Terminal_Knife = 	
-					"\cnSTANDARD-ISSUE COMBAT KNIFE \n\n"  
-					"\cjThe standard-issue combat knife is both a handy tool and a surprisingly good weapon. Originally intended for combat purposes, the UAC soon came to realise the fact that it could also be used to remove screws, cut electric wiring without risk (besides the usual sparking) and even force vent hatches, even if that could probably damage the blade´s sharpness or bend it over.\n\nThe combat knife is intended to be preferably used in stealth takedowns, either by stabbing the enemy from behind or even throwing the knife itself to the unsuspecting target. It can also be used to make the enemies bleed and eventually die (applying \"Hit&Run\" strategies) or also throw a decisive, quick slash to the throat.\n\nRegarding tactical use, the combat knife can be used for a wide variety of uses (as stated before). Amongst its many uses, it can be used to access ventilation hatches, open crates by removing their screws or fidget with electrical pannels that has exposed wires, completely negating any risk of potential electrocution.";
+					"\cnCOMBAT KNIFE \n\n"  
+					"\cjA military-grade titanium knife. It is a sturdy cutting tool, and well-balanced enough for throwing. The laser-sharpened edge is able to inflict grievous wounds easily, which can lead to further potential damage such as an internal bleeding.\n\nIt´s light weight and blade design allow the knife to be a very versatile hand-to-hand combat weapon, not being very difficult to handle and even allowing the user to pull it out quickly and throw a surprise slash at any enemy that might lunge too close to them.\n\nOn the other hand, it´s electrically isolated handle makes it useful for cutting electric wires and remove screws from crates and vents, always at the risk of damaging the blade though.";
+
+Terminal_Axe = 	
+					"\cnFIRE AXE \n\n"  
+					"\cjA generic firefighting tool. It is a commonplace item around UAC establishments. The most common axe models include a carbon-fiber haft, increasing their endurance while reducing manufacturing cost as compared to the traditional wood axes. The axe's head remains pure steel, however, and is suitable for cutting and rending apart most obstacles found inside UAC facilities, save for the reinforced bulkheads and the like.\n\nEven though it´s a bulkier melee weapon when compared with the knife, the axe´s raw power when delivering a huge slash is unmatched. Often enough to tear a human in half, a knowing user would try to balance the stamina consumption with precise, powerful hits.\n\nAs opposed to the knife, the axe´s long blade and shape allows for it to be used as a lever to force vent hatches and even metal, sealed doors open. Be aware that the bigger the strength required, the more damaged the blade will get.";

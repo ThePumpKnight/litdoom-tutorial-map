@@ -8,12 +8,6 @@ episode TMAP01
 	key = "t"
 }
 
-map TMAP01
-{
-	next = TMAP01
-	secretnext = TMAP01
-}
-
 DoomEdNums
 {
 	// WEAPONS
@@ -226,4 +220,7 @@ DoomEdNums
 	23386 = Mech
 	23387 = ArtilleryTank
 	23388 = AttackHelicopter
+
+	// TERMINALS
+	27373 = Desktop
 }

@@ -1,5 +1,19 @@
 // This is the MAPINFO lump
 
+// EPISODE DEFINITIONS
+
+episode TMAP01
+{
+	name = "UAC Training Tape"
+	key = "t"
+}
+
+map TMAP01
+{
+	next = TMAP01
+	secretnext = TMAP01
+}
+
 DoomEdNums
 {
 	// WEAPONS
@@ -212,11 +226,4 @@ DoomEdNums
 	23386 = Mech
 	23387 = ArtilleryTank
 	23388 = AttackHelicopter
-}
-
-// EPISODE DEFINITIONS
-episode TMAP01
-{
-	name = "UAC Training Tape"
-	key = "t"
 }

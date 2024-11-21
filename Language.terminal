@@ -29,7 +29,7 @@ Terminal_9mm=
 					"\cjThe 9x19mm Parabellum (often summarised as 9mm, 9x19mm or simply 9x19) is a type of cartridge for pistols, submachineguns and carabines designed by Georg Luger and introduced in 1902 for his Parabellum semi-automatic pistol, thus why it´s also called as 9mm Luger in order to diferenciate it from the 9mm Makarov or 9mm Browning, for example.\nThe NATO adopted it under the STANAG 4090 rule as a standard cartridge for armed forces. It was used by the german armed forces during both the First and Second World War with the Luger P08, Walther P38 and Astra 600 pistols, as well as the well-known MP-40 submachine gun.\nNowadays, the M99 Mediator and the VCR-9 Stiletto are two great examples of this type of cartridge being still used to this day.";
 			
 Terminal_500cal=	
-					"\cn-- WORK IN PROGRESS --\n\n"
+					"\cn-- WORK IN PROGRESS --\n\n";
 					
 Terminal_12gauge=
 					"\cn12 GAUGE BUCKSHOT SHOTGUN SHELL\n\n"
@@ -39,18 +39,18 @@ Terminal_12slug=
 					"\cn12 GAUGE SLUG SHOTGUN SHELL\n\n"
 					"\cjSimilarly to the 12 gauge buckshot shell, this kind of shell has a single projectile coated on anti-coagulant poison. Therefore, it packs a significant punch and can pierce easily through armor as well as mutilating the enemy easily, while coating the wound with poison and leaving the unfortunate target to bleed away.\nSince the use of anti-coagulant poison on ammunition for firearms isn´t something a goverment would start producing, due to the risk of getting problems with international committees and so on, the UAC has manufactures this type of shell all by itself, and therefore it´s the only of its kind in the world.\nThis type of shell is designed for compatibility with the Kampfmann M650,	alongside the common 12 gauge buckshot shells that are exposed here as well.";
 					
-Terminal_4.73mm=	
-					"\cn-- WORK IN PROGRESS --\n\n"
+Terminal_4_73mm=	
+					"\cn-- WORK IN PROGRESS --\n\n";
 					
-Terminal_7.62mm=	
-					"\cn-- WORK IN PROGRESS --\n\n"
+Terminal_7_62mm=	
+					"\cn-- WORK IN PROGRESS --\n\n";
 					
 Terminal_AT80=		
-					"\cn-- WORK IN PROGRESS --\n\n"
+					"\cn-- WORK IN PROGRESS --\n\n";
 					
 Terminal_nuke=		
-					"\cn-- WORK IN PROGRESS --\n\n"
+					"\cn-- WORK IN PROGRESS --\n\n";
 					
 Terminal_cell=		
-					"\cn-- WORK IN PROGRESS --\n\n"
+					"\cn-- WORK IN PROGRESS --\n\n";
 					

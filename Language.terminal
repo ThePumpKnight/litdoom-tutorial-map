@@ -25,11 +25,12 @@ Terminal_Submachinegun=
 					"\cjThe Stiletto VCR-9 is a compact submachine gun. It is a lightweight weapon that achieves a cyclic rate of 1200 RPM. Typically used by the special forces operatives to carry out covert missions, most often in tandem with a suppressor attachment.\nAlthough the VCR-9 does not excel in any aspect, it is a relatively cheap submachine gun platform. Most of its body consists of mass-produced polymers, allowing the weapon to reach an acceptable compromise between endurance and affordability. Thanks to that, the Stiletto has managed to proliferate in various armed forces, such as the USCM.\n\nEven tho it has quite mediocre accuracy, the Stiletto excels on it´s high fire rate and compatibility with a non-integrated supressor, which also increases the durability and overall damage (due to the extension of the barrel).";
 					
 Terminal_9mm=
-					"\cn9x19mm PARABELLUM\n\n"
+					"\cn9x19MM PARABELLUM\n\n"
 					"\cjThe 9x19mm Parabellum (often summarised as 9mm, 9x19mm or simply 9x19) is a type of cartridge for pistols, submachineguns and carabines designed by Georg Luger and introduced in 1902 for his Parabellum semi-automatic pistol, thus why it´s also called as 9mm Luger in order to diferenciate it from the 9mm Makarov or 9mm Browning, for example.\nThe NATO adopted it under the STANAG 4090 rule as a standard cartridge for armed forces. It was used by the german armed forces during both the First and Second World War with the Luger P08, Walther P38 and Astra 600 pistols, as well as the well-known MP-40 submachine gun.\nNowadays, the M99 Mediator and the VCR-9 Stiletto are two great examples of this type of cartridge being still used to this day.";
 			
 Terminal_500cal=	
-					"\cn-- WORK IN PROGRESS --\n\n";
+					"\cn.500 ROTHOGG\n\n"
+					"\cjThe ";
 					
 Terminal_12gauge=
 					"\cn12 GAUGE BUCKSHOT SHOTGUN SHELL\n\n"
@@ -39,18 +40,23 @@ Terminal_12slug=
 					"\cn12 GAUGE SLUG SHOTGUN SHELL\n\n"
 					"\cjSimilarly to the 12 gauge buckshot shell, this kind of shell has a single projectile coated on anti-coagulant poison. Therefore, it packs a significant punch and can pierce easily through armor as well as mutilating the enemy easily, while coating the wound with poison and leaving the unfortunate target to bleed away.\nSince the use of anti-coagulant poison on ammunition for firearms isn´t something a goverment would start producing, due to the risk of getting problems with international committees and so on, the UAC has manufactures this type of shell all by itself, and therefore it´s the only of its kind in the world.\nThis type of shell is designed for compatibility with the Kampfmann M650,	alongside the common 12 gauge buckshot shells that are exposed here as well.";
 					
-Terminal_4_73mm=	
-					"\cn-- WORK IN PROGRESS --\n\n";
+Terminal_473mm=	
+					"\cn4.73MM RIFLE CARTRIDGE\n\n"
+					"\cjNamely introduced on its caseless variant with the Heckler & Koch G11, this unique type of rifle cartridge was then further developed by the UAC. Nowadays, its a reliable rifle cartridge with proper casing, usually employed for fast-firing weapons to mow down enemies, in a perfect balance of price and power.\nDespite being less hard-hitting than its 7.62mm counterpart, it has been produced on bigger quantities and thus is more reliable when suppressive fire is needed the most. Rather than a precise tool, this is meant to be fired on short bursts of around 3 rounds when employed with the Orthos M360 Binary Rifle.\nIt must be taken into account that, due to the obvious inmense recoil the XM-214, its also intended for burst fire, thus why it was given a secondary fire option which really fits such purpose.";
 					
-Terminal_7_62mm=	
-					"\cn-- WORK IN PROGRESS --\n\n";
+Terminal_762mm=	
+					"\cn7.62MM RIFLE CARTRIDGE\n\n"
+					"\cjA quite well known cartridge of Soviet origin and used by several famous guns of the Red Army, like the SKS carabine or the AK-47; this type of ammunition pack quite a punch and will put most unarmoured enemies down with a single tap.\nMostly employed by the UAC as a slow-fired, precise counterpart to the 4.73mm, this cartridge is nowadays used alongside the first one on the Orthos M360 Binary Rifle, and standalone on the Vuurkag SW-24.\nDue to it´s precision and lethality, it´s usually advised to be used in combination with the ETC module of the M360 to fully exploit the potential of this cartridge against heavily armoured targets.";
 					
 Terminal_AT80=		
-					"\cn-- WORK IN PROGRESS --\n\n";
+					"\cn80MM ANTI-TANK ROCKET\n\n"
+					"\cjQuite an uncommon, yet still popular in some places, this HEAT rocket has been used by some nations in modern warfare for either static (the Italian Breda Folgore) or shoulder-mounted rocket launchers (PF-89, also known as the Chinese Type 98).\nBeen more keen on mobility and infantry-like based security and operation forces, the UAC developed the Valkyr AT-80 as a portable rocket launcher, with a multi-round type mechanism based off the M360 whose primary type of cartridge is the 80mm HEAT.\nBeing far more usual than its thermobaric variant, the 80mm HEAT is a good tool for destruction in the right hands, capable of blowing tanks and breaking down heavily fortified positions alike.";
 					
 Terminal_nuke=		
-					"\cn-- WORK IN PROGRESS --\n\n";
+					"\cnTHERMOBARIC WARHEAD ROCKET\n\n"
+					"\cjThe ";
 					
 Terminal_cell=		
-					"\cn-- WORK IN PROGRESS --\n\n";
+					"\cnENERGY CELL\n\n"
+					"\cjThe ";
 					

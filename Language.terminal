@@ -30,7 +30,7 @@ Terminal_9mm=
 			
 Terminal_500cal=	
 					"\cn.500 ROTHOGG\n\n"
-					"\cjThe ";
+					"\cjWith the same concept of having a big, brutal and badass cartridge for their revolvers, capable of shooting down even the most heavily armed infantry on the other side of the barrel with a couple of shots; the .500 Rothogg is an absolute beast in regard of sheer power for a revolver. Effectively turning the Kriegerhand into one of the most deadly revolvers in the world, this cartridge is the variation of .500 S&W that the UAC made specifically to use in pair with their well-known revolver once the contract of partnership ended recently.";
 					
 Terminal_12gauge=
 					"\cn12 GAUGE BUCKSHOT SHOTGUN SHELL\n\n"
@@ -54,7 +54,7 @@ Terminal_AT80=
 					
 Terminal_nuke=		
 					"\cnTHERMOBARIC WARHEAD ROCKET\n\n"
-					"\cjThe ";
+					"\cjThe ultimate infantry, man-portable tool of destruction. A tactical tool for butchering a whole neighbourhood, the UAC has been the first corporation in the entire world to be able to create these little monstruosities in quite big numbers and keeping them equally effective.\nPretty much unreliable on close quarters for evident reasons, this projectile is designed for long-range engagements with heavy duty targets, even though it is equally effective against a mass of people.";
 					
 Terminal_cell=		
 					"\cnENERGY CELL\n\n"

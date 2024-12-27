@@ -2,61 +2,112 @@
 					
 Terminal_Knife = 	
 					"\cnCOMBAT KNIFE \n\n"  
-					"\cjA military-grade titanium knife. It is a sturdy cutting tool, and well-balanced enough for throwing.\nThe laser-sharpened edge is able to inflict grievous wounds easily, which can lead to further potential damage such as an internal bleeding.\n\nIt´s light weight and blade design allow the knife to be a very versatile hand-to-hand combat weapon, not being very difficult to handle and even allowing the user to pull it out quickly and throw a surprise slash at any enemy that might lunge too close to them. It was also improved to incorporate a small button to release a jet stream of anticoagulant poison, effectively turning it into a fully functional Wasp-style knife capable of ripping all the guts out of your target in a matter of a second.";
+					"\cj---Work in progress---";
 
 Terminal_Axe = 	
-					"\cnFIRE AXE \n\n"  
-					"\cjA generic firefighting tool. It is a commonplace item around UAC establishments.\nThe most common axe models include a carbon-fiber haft, increasing their endurance while reducing manufacturing cost as compared to the traditional wood axes. The axe's head remains pure steel, however, and is suitable for cutting and rending apart most obstacles found inside UAC facilities, save for the reinforced bulkheads and the like.\n\nEven though it´s a bulkier melee weapon when compared with the knife, the axe´s raw power when delivering a huge slash is unmatched. Often enough to tear a human in half, a knowing user would try to balance the stamina consumption with precise, powerful hits.";
+					"\cnCOMBAT KNIFE \n\n"  
+					"\cj---Work in progress---";
 					
 Terminal_Chainsaw = 	
 					"\cnCHAINSAW \n\n"  
-					"\cjAn industrial cutting tool of a fairly old model. The chainlink is made out of diamond tips, enabling sufficient cutting power against hard materials such as steel.\nHowever, as the need for such heavy work rarely arises, the chainsaws like these are typically used for reducing forestation around UAC facilities.\n\nDespite being a truly gruesome and brutal tool to kill someone with, the chainsaw is quite difficult to operate and requires some good pushes to take out of the unfortunate victim once it latches to it. It´s also quite noisy, so turning it on with enemies close to you will probably alert them of your position.";
+					"\cj---Work in progress---";
 					
 Terminal_Pistol = 	
 					"\cnM99 MEDIATOR\n\n"  
-					"\cjThe M99 ”Mediator” is a standard-issue USCM sidearm. This new handgun model had been adopted following an arms deal competition, conducted a few years ago.\nThe M99 offers a decent compromise between stopping power, magazine capacity and reliability. Some of the non-military UAC personnel are also trained in the usage of this handgun.\n\nDespite not packing a huge caliber, the M99 is quite accurate. It´s main characteristic is the firemode switch, allowing the weapon to fire either one bullet at a time or burst of three. It can also be pulled out pretty quickly, allowing to get out the weapon easily in a moment of need.";
+					"\cj---Work in progress---";
 
 Terminal_Revolver = 	
 					"\cnKRIEGERHAND M630 BFR\n\n"  
-					"\cjThe Kriegerhand M630 BFR is a .50 revolver. It is a uncommon sidearm, that has a reputation of ridiculous firepower and prohibitive weight. Its intimidation factor was embraced by some security forces and eccentric mercenaries.\nAlthough the BFR is uncomfortable to be used by ordinary soldiers, the enhanced elite operatives such as the UAC bodyguard cadre favour this weapon, as they can handle this weapon easily, and in turn the BFR packs enough punch to fend off their usual opponents, including the rival corporate agents.";
+					"\cj---Work in progress---";	
 					
 Terminal_Submachinegun=
 					"\cnSTILETTO VCR-9\n\n"
-					"\cjThe Stiletto VCR-9 is a compact submachine gun. It is a lightweight weapon that achieves a cyclic rate of 1200 RPM. Typically used by the special forces operatives to carry out covert missions, most often in tandem with a suppressor attachment.\nAlthough the VCR-9 does not excel in any aspect, it is a relatively cheap submachine gun platform. Most of its body consists of mass-produced polymers, allowing the weapon to reach an acceptable compromise between endurance and affordability. Thanks to that, the Stiletto has managed to proliferate in various armed forces, such as the USCM.\n\nEven tho it has quite mediocre accuracy, the Stiletto excels on it´s high fire rate and compatibility with a non-integrated supressor, which also increases the durability and overall damage (due to the extension of the barrel).";
+					"\cj---Work in progress---";
+					
+Terminal_PumpShotgun=		
+					"\cnKAMPFMANN M650 BROOM\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_AutoShotgun=
+					"\cnSKALLVERN-12 AUTOMATIC SHOTGUN\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_Rifle=		
+					"\cnORTHOS M360 BINARY COMBAT RIFLE\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_Machinegun=		
+					"\cnVUURKAG SW-24\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_Minigun=		
+					"\cnXM-214 MICROGUN\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_GrenadeLauncher=		
+					"\cnCHIMERA MULTI-PURPOSE LAUNCHER\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_RocketLauncher=		
+					"\cnVALKYR AT-80\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_PlasmaGun=		
+					"\cnM890 THERATORN\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_PlasmaRifle=		
+					"\cnXM920 GALITSADI PLASMA LANCE\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_Flamethrower=		
+					"\cnFLAMETHROWER\n\n"
+					"\cj---Work in progress---";
 					
 Terminal_9mm=
 					"\cn9x19MM PARABELLUM\n\n"
-					"\cjThe 9x19mm Parabellum (often summarised as 9mm, 9x19mm or simply 9x19) is a type of cartridge for pistols, submachineguns and carabines designed by Georg Luger and introduced in 1902 for his Parabellum semi-automatic pistol, thus why it´s also called as 9mm Luger in order to diferenciate it from the 9mm Makarov or 9mm Browning, for example.\nThe NATO adopted it under the STANAG 4090 rule as a standard cartridge for armed forces. It was used by the german armed forces during both the First and Second World War with the Luger P08, Walther P38 and Astra 600 pistols, as well as the well-known MP-40 submachine gun.\nNowadays, the M99 Mediator and the VCR-9 Stiletto are two great examples of this type of cartridge being still used to this day.";
+					"\cj---Work in progress---";
 			
 Terminal_500cal=	
 					"\cn.500 ROTHOGG\n\n"
-					"\cjWith the same concept of having a big, brutal and badass cartridge for their revolvers, capable of shooting down even the most heavily armed infantry on the other side of the barrel with a couple of shots; the .500 Rothogg is an absolute beast in regard of sheer power for a revolver. Effectively turning the Kriegerhand into one of the most deadly revolvers in the world, this cartridge is the variation of .500 S&W that the UAC made specifically to use in pair with their well-known revolver once the contract of partnership ended recently.";
+					"\cj---Work in progress---";
 					
 Terminal_12gauge=
 					"\cn12 GAUGE BUCKSHOT SHOTGUN SHELL\n\n"
-					"\cjThe 12 gauge shotgun shell is by far the most popular size of shotgun shell in the world, but specifically in the United States.\nAlongside 20 and 28 gauge and .410 bore, these are the most commonly used types of shotgun ammunition, but the UAC deemed more proper the use of the 12 gauge on their shotguns. Both the Skallvern and the Kampfmann make use of this kind of gauge, either loaded with buckshot or slugs.\nIn the stand in front of you, for example, you can see some of the usual 12 gauge buckshot shells used by these shotguns.";
+					"\cj---Work in progress---";
 					
 Terminal_12slug=
 					"\cn12 GAUGE SLUG SHOTGUN SHELL\n\n"
-					"\cjSimilarly to the 12 gauge buckshot shell, this kind of shell has a single projectile coated on anti-coagulant poison. Therefore, it packs a significant punch and can pierce easily through armor as well as mutilating the enemy easily, while coating the wound with poison and leaving the unfortunate target to bleed away.\nSince the use of anti-coagulant poison on ammunition for firearms isn´t something a goverment would start producing, due to the risk of getting problems with international committees and so on, the UAC has manufactures this type of shell all by itself, and therefore it´s the only of its kind in the world.\nThis type of shell is designed for compatibility with the Kampfmann M650,	alongside the common 12 gauge buckshot shells that are exposed here as well.";
+					"\cj---Work in progress---";
 					
 Terminal_473mm=	
 					"\cn4.73MM RIFLE CARTRIDGE\n\n"
-					"\cjNamely introduced on its caseless variant with the Heckler & Koch G11, this unique type of rifle cartridge was then further developed by the UAC. Nowadays, its a reliable rifle cartridge with proper casing, usually employed for fast-firing weapons to mow down enemies, in a perfect balance of price and power.\nDespite being less hard-hitting than its 7.62mm counterpart, it has been produced on bigger quantities and thus is more reliable when suppressive fire is needed the most. Rather than a precise tool, this is meant to be fired on short bursts of around 3 rounds when employed with the Orthos M360 Binary Rifle.\nIt must be taken into account that, due to the obvious inmense recoil the XM-214, its also intended for burst fire, thus why it was given a secondary fire option which really fits such purpose.";
+					"\cj---Work in progress---";
 					
 Terminal_762mm=	
 					"\cn7.62MM RIFLE CARTRIDGE\n\n"
-					"\cjA quite well known cartridge of Soviet origin and used by several famous guns of the Red Army, like the SKS carabine or the AK-47; this type of ammunition pack quite a punch and will put most unarmoured enemies down with a single tap.\nMostly employed by the UAC as a slow-fired, precise counterpart to the 4.73mm, this cartridge is nowadays used alongside the first one on the Orthos M360 Binary Rifle, and standalone on the Vuurkag SW-24.\nDue to it´s precision and lethality, it´s usually advised to be used in combination with the ETC module of the M360 to fully exploit the potential of this cartridge against heavily armoured targets.";
+					"\cj---Work in progress---";
 					
 Terminal_AT80=		
 					"\cn80MM ANTI-TANK ROCKET\n\n"
-					"\cjQuite an uncommon, yet still popular in some places, this HEAT rocket has been used by some nations in modern warfare for either static (the Italian Breda Folgore) or shoulder-mounted rocket launchers (PF-89, also known as the Chinese Type 98).\nBeen more keen on mobility and infantry-like based security and operation forces, the UAC developed the Valkyr AT-80 as a portable rocket launcher, with a multi-round type mechanism based off the M360 whose primary type of cartridge is the 80mm HEAT.\nBeing far more usual than its thermobaric variant, the 80mm HEAT is a good tool for destruction in the right hands, capable of blowing tanks and breaking down heavily fortified positions alike.";
+					"\cj---Work in progress---";
 					
 Terminal_nuke=		
 					"\cnTHERMOBARIC WARHEAD ROCKET\n\n"
-					"\cjThe ultimate infantry, man-portable tool of destruction. A tactical tool for butchering a whole neighbourhood, the UAC has been the first corporation in the entire world to be able to create these little monstruosities in quite big numbers and keeping them equally effective.\nPretty much unreliable on close quarters for evident reasons, this projectile is designed for long-range engagements with heavy duty targets, even though it is equally effective against a mass of people.";
+					"\cj---Work in progress---";
 					
 Terminal_cell=		
 					"\cnENERGY CELL\n\n"
-					"\cjThe ";
+					"\cj---Work in progress---";
 					
+Terminal_cellPack=		
+					"\cnENERGY CELL PACK\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_gas=		
+					"\cnFUEL JERRY CAN\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_explosives=		
+					"\cnEXPLOSIVES\n\n"
+					"\cj---Work in progress---";

@@ -4,8 +4,14 @@
 
 episode TMAP01
 {
-	name = "UAC Training Tape"
+	name = "UAC EXPO 2021 - Promotion Tape"
 	key = "t"
+}
+
+map TMAP01 "Promotion Tape v.2021.666b"
+{
+	next = "EndTitle"
+	secretnext = "EndTitle"
 }
 
 DoomEdNums

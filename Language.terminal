@@ -38,11 +38,15 @@ Terminal_Revolver =
 					"\cnAplication: \n"
 					"\cjThe Kriegerhand offers great power and accuracy at a fairly long range. It can consistently one-shot unarmored and lightly armored enemies in a shot or two at most.\nHowever, it has some evident downsides like very potent recoil, small capacity and quite expensive ammunition that isn´t the most common by far. However, the .50 Rothogg is as rare as it is powerful, having armor-piercing capabilities more than enough to blast through almost as much as a 12-gauge shotgun would.\n\n"
 					"\cnSpecifications: \n"
-					"\cnWeight: 2.7 kg\nTotal length: 340 mm\nOperation: double-action\nRate of fire: Semi auto\nAmmunition: .50 Rothogg\nAmmunition supply: 30 to 50 rounds\nCapacity: 5 rounds";	
+					"\cjWeight: 2.7 kg\nTotal length: 340 mm\nOperation: double-action\nRate of fire: Semi auto\nAmmunition: .50 Rothogg\nAmmunition supply: 30 to 50 rounds\nCapacity: 5 rounds";	
 					
 Terminal_Submachinegun=
 					"\cnSTILETTO VCR-9\n\n"
-					"\cj---Work in progress---";
+					"\cjThe Stiletto VCR-9 is a compact submachine gun . It is a lightweight weapon that achieves a cyclic rate of 1200 RPM. Typically used by the special forces operatives to carry out covert missions, most often in tandem with a suppressor attachment.\nAlthough the VCR-9 does not excel in any aspect, it is a relatively cheap submachine gun platform. Most of its body consists of mass-produced polymers, allowing the weapon to reach an acceptable compromise between endurance and affordability. Thanks to that, the Stiletto has managed to proliferate in various armed forces, such as the USMC.\n\n"
+					"\cnAplication: \n"
+					"\cjThe submachine gun has a high rate of fire, but mediocre accuracy. It is good for cleaning up small groups of light armored enemies but quite ineffective against advanced armored enemies. Plus, it is also quite prone to waste ammo if not used in short bursts.\nThe Stiletto also has a supressor which makes the shots more quiet and powerful, while also making the weapon somewhat more durable at the cost of it being damaged over time, the longer it has been used.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 3.8 kg\nTotal length: 600 mm\nOperation: delayed blowback\nRate of fire: 1200 RPM\nAmmunition: 9mm pistol rounds\nAmmunition supply: 150 to 400 rounds\nCapacity: 40 rounds, +1 if already has a round chambered";
 					
 Terminal_PumpShotgun=		
 					"\cnKAMPFMANN M650 BROOM\n\n"

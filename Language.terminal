@@ -2,23 +2,43 @@
 					
 Terminal_Knife = 	
 					"\cnCOMBAT KNIFE \n\n"  
-					"\cj---Work in progress---";
+					"\cjA military-grade titanium knife. It is a sturdy cutting tool, and well-balanced enough for throwing. The laser-sharpened edge is able to inflict grievous wounds easily, which can lead to further potential damage such as internal bleeding.\nIn addition, modern variants of this knife have turned it into a fully-functional WASP knife, allowing it to fit a small cartridge of anticoagulant poison and then release it with the press of a button once the blade sinks in the target, causing massive bleeding and internal injuries.\n\n"
+					"\cnAplication: \n"
+					"\cjBeing one of the most versatile weapons available, the knife is not precisely durable but rather shines for being a fast weapon that the user can slice throught unarmored (or lightly armored even) targets with ease. It is easy to handle, meaning it will not require a huge amount of effort to control or use precisely; and it can make severe injuries with the anticoagulat blast.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 0.4 kg\nTotal length: 245 mm\nSupply: 10 to 20 knives.\nCapacity: x1 anticoagulant poison canister";
 
 Terminal_Axe = 	
 					"\cnFIRE AXE \n\n"  
-					"\cj---Work in progress---";
+					"\cjA generic firefighting tool. It is a commonplace item around UAC establishments. The most common axe models include a carbon-fiber haft, increasing their endurance while reducing manufacturing costs compared to traditional wood axes.\nThe axe head remains pure steel, however, and it is suitable for cutting and rendering apart most obstacles found inside UAC facilities, save for reinforced bulkheads and similars.\n\n"
+					"\cnAplication: \n"
+					"\cjThe fire axe is capable of inflicting considerably more damage than the knife, being able to kill almost every unarmored living thing unfortunate enough to stand in the way of the steel blade with a single, decapitating chop. Logically, it is quite a cumbersome weapon and requires proper handling to use properly, thus swinging it around aimlessly will only serve to get you (the user) exhausted. Even though most people can still use it as a weapon if used properly, it is clear that the more strength the user has, the more damaging the impact will be.\nA skilled user is also capable of use it to deflect incoming attacks, a technique commongly known as parrying. Instead of grabbing the axe like a maze, you can put one hand near the end of the handle and another close (but not touching) the head of the axe, and use it effectively as a bar of sorts to push an incoming melee off the way. However, the UAC completely discourages this practise, since there have been past instances of [REDACTED].\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 3 kg\nTotal length: 550 mm";
 					
 Terminal_Chainsaw = 	
-					"\cnCHAINSAW \n\n"  
-					"\cj---Work in progress---";
-					
+					"\cnCHAINSAW\n\n"  
+					"\cjAn industrial cutting tool of a fairly old model. The chainlink is made out of diamond tips, enabling sufficient cutting power against hard materials such as steel.\nHowever, as the need for such heavy work rarely arises, chainsaws like these are typically used for reducing forestation around UAC facilities.\n\n"
+					"\cnAplication: \n"
+					"\cjEven though the UAC doesn´t treat this tool as a weapon (and completely discourages its use as such), the chainsaw is probably the most heavy-hitting melee weapon in comparison with the axe or the knifes.\nHowever, despite having a fearsome reputation as a weapon, the chainsaw is cumbersome and relies of fuel, meaning that once it latches onto a target it will be hard to disengage therefore consuming more fuel. It is also quite noisy, thus it is definitely not a stealth weapon, so it would be better employed on lonely enemies unfortunate enough to cross sights with you.\n\n"	
+					"\cnSpecifications: \n"
+					"\cjWeight: 8 kg\nTotal length: 425 mm\nAmmunition: fuel\nAmmunition supply: 500 to 800 fuel units";
+								
 Terminal_Pistol = 	
 					"\cnM99 MEDIATOR\n\n"  
-					"\cj---Work in progress---";
+					"\cjThe M99 Mediator is a standard issue USCM sidearm. This new handgun model has been adopted following an arms deal competition, conducted a few years ago.\nThe M99 offers a decent compromise between stopping power, magazine capacity and reliability. Some of the non-military UAC personnel are also trained in the usage of this handgun \n\n"
+					"\cnAplication: \n"
+					"\cjBeing a fairly accurate yet quite weak sidearm, the M99 has low recoil, short effective range and above-average durability, while also featuring a firemode switch to alter between single fire and 3-round burst. Since it is also lightweight and not very big, it also allows the user to swiftly pull it out without risking (much) his own integrity if the situation requires it.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 0.9 kg\nTotal length: 175 mm\nRate of fire: Semi auto | 3-round burst\nAmmunition: 9 mm pistol rounds\nAmmunition supply: 150 to 400 rounds\nCapacity: 15 rounds, +1 if already has a round chambered";
 
 Terminal_Revolver = 	
 					"\cnKRIEGERHAND M630 BFR\n\n"  
-					"\cj---Work in progress---";	
+					"\cjThe Kriegerhand M630 BFR is a .50 magnum revolver. It is a uncommon sidearm, that has a reputation of ridiculous firepower and prohibitive weight. Its intimidation factor was embraced by some security forces and eccentric mercenaries.\nAlthough the BFR is uncomfortable to be used by ordinary soldiers, the enhanced elite operatives such as the UAC bodyguard cadre favour this weapon, as they can handle this weapon easily, and in turn the BFR packs enough punch to fend off their usual opponents – including the rival corporate agents.\n\n"
+					"\cnAplication: \n"
+					"\cjThe Kriegerhand offers great power and accuracy at a fairly long range. It can consistently one-shot unarmored and lightly armored enemies in a shot or two at most.\nHowever, it has some evident downsides like very potent recoil, small capacity and quite expensive ammunition that isn´t the most common by far. However, the .50 Rothogg is as rare as it is powerful, having armor-piercing capabilities more than enough to blast through almost as much as a 12-gauge shotgun would.\n\n"
+					"\cnSpecifications: \n"
+					"\cnWeight: 2.7 kg\nTotal length: 340 mm\nOperation: double-action\nRate of fire: Semi auto\nAmmunition: .50 Rothogg\nAmmunition supply: 30 to 50 rounds\nCapacity: 5 rounds";	
 					
 Terminal_Submachinegun=
 					"\cnSTILETTO VCR-9\n\n"

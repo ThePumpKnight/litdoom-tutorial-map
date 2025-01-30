@@ -50,7 +50,11 @@ Terminal_Submachinegun=
 					
 Terminal_PumpShotgun=		
 					"\cnKAMPFMANN M650 BROOM\n\n"
-					"\cj---Work in progress---";
+					"\cjThe Kampfmann M650 is the standard police armament of the Union Aerospace Corporation. The M650 design is a modified version of the old Remington M870 shotgun, and was aquired by the Kampfmann GmbH company (a subsidiary of the UAC) from the defunct Remington Arms.\nThe M650 is an ubiquitous weapon around UAC bases, most often wielded by the security officers. This scattegun might not be the best choice for intense firefights, but it remains as an intimidating weapon specially against unarmoured opposition.\n\n"
+					"\cnAplication: \n"
+					"\cjThis shotgun is a moderately powerful weapon. It reliably kills light armoured enemies in one shot and packs enough punch to be effective against targets with higher armour grade. Its disadvantages are slow reload speed and limited range. However, unlike magazine-fed weapons, the shotgun can be easily reloaded with any amount of shells allowed by the tube magazine, without unloading required to save the remaining ammo.\nBesides, the shotgun accepts two variants of the classic 12-gauge shotgun shell, which are buckshot and slug. As its name implies, buckshot is made up a group of small pellets that scatter around the aimed area, whereas slug is made up of a single heavy-hitting projectile coated in anticoagulant poison. While slugs are more powerful and accurate than buckshot, the later is better for dealing with groups of lightly armoured enemies instead.\nHowever, it is worth noting that UAC forces generally use this shotgun with slug shells loaded rather than buckshot, since the Skallvern gets the most out of the buckshot shells and is unable to fire slugs.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 4 kg\nTotal length: 1124 mm\nOperation: pump-action\nAmmunition: 12 gauge buckshot/anticoagulant-coated slug shells\nAmmunition supply: 30 to 60 buckshot and 30 to 50 slugs.\nCapacity: 6 shells, +1 if already has one chambered.";
 					
 Terminal_AutoShotgun=
 					"\cnSKALLVERN-12 AUTOMATIC SHOTGUN\n\n"

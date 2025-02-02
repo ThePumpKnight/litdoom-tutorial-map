@@ -66,11 +66,19 @@ Terminal_AutoShotgun=
 					
 Terminal_Rifle=		
 					"\cnORTHOS M360 BINARY COMBAT RIFLE\n\n"
-					"\cj---Work in progress---";
+					"\cjThe Akasuke M360 binary combat rifle, also known as the Orthos, is a new hybrid infantry rifle model introduced by the USMC. It was adopted due to the combined reasons of simplifying field logistics and increasing the versatility of a single weapon model. Externally, the M360 Orthos resembles many combat rifles of its size, but its unique function is hidden in its internal mechanism: the rechambering process.\nAs a hybrid weapon, the Orthos is able to adjust its caliber on the field, shifting the working parts and bore size to accept either the 7.62 mm full rifle cartridge, or the 4.73 mm intermediate load. Thanks to this ability, the Orthos offers its wielder an effective and rapid response to a wide range of threats.\n\n"
+					"\cnAplication: \n"
+					"\cjCombining decent firepower and accuracy, the binary combat rifle is one of the most versatile weapons out there, a feature emphasized by the rechambering feature. The 4.73 mm can be employed for faster fire rate at the cost of being less accurate and somewhat weak when compared to the 7.62 mm that also packs a heavier punch instead of firing as rapidly. To properly rechamber the rifle, it must be completely unloaded beforehand.\nIn addition to that, the M360 also includes compatibility features with the ETC module, which increases the performance of the rifle by boosting the potential damage of the bullets using plasma charges. It can be reloaded using standard plasma cells, and the remaining power can be judged by looking at the intensity of the glowing blue light. To fully recharge the ETC module, you will need 15 plasma cells.\n\n"
+					"\cnSpecifications: \n"
+					"cjWeight: 4.9 kg\nTotal length: 934 mm\nOperation: gas operated, includes electrothermal-chemical operation compatibility with remote plasma injection method\nRate of fire: 360 RPM with 7.62 mm rounds, 540 RPM with 4.73 mm rounds\nAmmunition: 4.73 mm / 7.62 mm rounds\nAmmunition supply: 150 to 300 rounds of 7.62 mm, 200 to 500 rounds of 4.73mm\nCapacity: 30 rounds, +1 when has a round chambered already";
 					
 Terminal_Machinegun=		
 					"\cnVUURKAG SW-24\n\n"
-					"\cj---Work in progress---";
+					"\cjThe Vuurkag S2-24 is a general-purpose machine gun. It is a support role weapon that is intended to be operated from a mounted position, but some of the sufficiently trained personnel are able to fire it handheld as well.\nAlthought it is a crude weapon (known amongst operators as the Boar), it is also relatively durable, contributing to its popularity amongst various armed forces.\nUniquely for a machine gun, the SW-24 accepts underslug attachments, including grenade launchers of various calibers. The Vuurkrag combined with such an attachment is a force to be reckoned with in open firefights - being able to deal with the large groups of hostile personnel, as well are repelling an occasional moderately-armored aggressor.\n\n"
+					"\cnAplication: \n"
+					"\cjThe machine gun is a vicious weapon that can sustain long volleys of automatic fire. In addition, the underside grenade launcher offers an extra explosive punch in case a bigger enemy needs to be dealt with quickly.\nHowever, the underside grenade launcher only holds a single grenade on it, and the machine gun itself suffers from low accuracy when fighting at long distances, thus encouraging CQC. It is also quite evident that this gun consumes ammo fast when fired recklessly, so it will burn through the reserves of a careless user.\nStill, the Vuurkrag is one of the best weapons in regard of raw power than any operator could get hands on, since it relies on pretty common ammunition and it is effective in almost any situation.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 12 kg\nTotal length: 1104 mm\nOperation: gas operated\nRate of fire: 720 RPM\nAmmunition: 7.62 mm cartridge and accepts grenades for the underbarrel launcher\nAmmunition supply: 150 to 300 rounds of 7.62mm, and hand grenades.\nCapacity: 100 rounds of 7.62, +1 if already chambered; 1 grenade";
 					
 Terminal_Minigun=		
 					"\cnXM-214 MICROGUN\n\n"

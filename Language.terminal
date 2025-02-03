@@ -82,7 +82,11 @@ Terminal_Machinegun=
 					
 Terminal_Minigun=		
 					"\cnXM-214 MICROGUN\n\n"
-					"\cj---Work in progress---";
+					"\cjThe XM-214 microgun is a company-level support weapon. It is a rotatory machine gun, powered by an electric motor. The microgun primary purpose is to lay down suppressive fire of extraordinary volume, for when the slower machine gun are not enough to deter an amassed attack.\nThe XM-214 features an external ammo canister with integrated ammo belt connection, for the maximum practical rate of fire. To address the weight concerns, the XM-214 external frame is built from titanium, decreasing the weapon´s weight under 20 kilograms.\nAn extra weapon extension exists for this microgun, which is a powered support harness. This contraption provides advanced fire control and recoil nullification systems, in addition of serving as a partial exoskeleton to help the shooter with the gun weight. With the harness mounted, the XM-214 becomes much easier to handle and its strain on the operator does not exceed the one incurred by a typical light machine gun.\n\n"
+					"\cnAplication: \n"
+					"\cjThe microgun needs a brief spin-up time of around a second, but offers an unparalleled volume of fire. It easily massacres almost any infantry personnel stading in front of its 6 barrels in no time.\nThis comes at the evident cost of insane ammo consumption and overwhelming recoil, which is enough to make the gun uncontrollable unless fired in short bursts. Due to its ammo consumption rate, the microgun is recommended to be reserved only for the most dangerous hostiles.\nIt is also possible to fire a dual quick burst with a secondary trigger, capable of tearing through the most heavy infantry armor like it is paper.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 16.8 kg\nTotal length: 763 mm\nOperation: rotary breech\nRate of fire: 2100 RPM\nAmmunition: 4.73 mm cartridge\nAmmunition supply: 200 to 500 rounds\nCapacity: draws ammo straight from the supply";
 					
 Terminal_GrenadeLauncher=		
 					"\cnCHIMERA MULTI-PURPOSE LAUNCHER\n\n"

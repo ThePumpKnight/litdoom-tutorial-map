@@ -90,7 +90,11 @@ Terminal_Minigun=
 					
 Terminal_GrenadeLauncher=		
 					"\cnCHIMERA MULTI-PURPOSE LAUNCHER\n\n"
-					"\cj---Work in progress---";
+					"\cjThe Akasuke MPGL-5 (Multi-Purpose Grenade Launcher), also known as Chimera, is a special launcher-type weapon. Resembling a typical revolver grenade launcher, the Chimera is an unprecedentedly complex handheld launcher platform.\nCombining pneumatic and propellant-based ignition systems, along with adjustable breech size and electronic fire control, the Chimera is able to launch virtually any kind of material that fits into the firing chamber. This makes it a popular weapon amongst paramilitary, terrorist and guerrilla groups that are short on money for the regular ordnance.\n\n"
+					"\cnAplication: \n"
+					"\cjThe grenade launcher is a versatile weapon that enables to fire multiple ammo types, some even could be considered straightforward junk. It is a dependable weapon that can deal with a plethora of situations, being able to use conventional grenades, cluster munitions, stims, metal scraps and so on.\nIt is usually encouraged to experiment around (in a safe environment) with the different kinds of ammunition to see which one fits each situation the best.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 7.4 kg\nTotal length: 680 mm\nOperation: pneumatic/conventional pump-action with electronic fire controls\nAmmunition: flares, scrap metal, grenades of all kinds...\nCapacity: 6 rounds of whatever is put in the firing barrels";
 					
 Terminal_RocketLauncher=		
 					"\cnVALKYR AT-80\n\n"

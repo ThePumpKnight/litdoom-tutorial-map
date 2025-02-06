@@ -98,7 +98,11 @@ Terminal_GrenadeLauncher=
 					
 Terminal_RocketLauncher=		
 					"\cnVALKYR AT-80\n\n"
-					"\cj---Work in progress---";
+					"\cjThe SMAVW-3, or Shoulder Mounted Anti-Vehicle Weapon, is the USMC standard anti-armor armament. Better known as the AT-80, the Valkyr is an 84mm caliber recoiless rifle widely used against enemy ground vehicles, low-altitude aircraft and battlebots.\nIt is equipped with a propietary hyper-propulsion system, providing a speed-boost to its shells - reaching a top speed of a thousand meters per second - and further increasing their penetration capability.\n\n"
+					"\cnAplication: \n"
+					"\cjThe rocket launcher is a mainstay anti-tank weapon that can blow up most kinds of enemies with a single shot. The rockets are highly devastating and completely ignore amor, making them ideal for facing heavyweight targets like vehicles.\nHowever, it is not a common weapon and it is slow to reload, meaning the user must make each shot count. Splash damage from the explosiong must be taken into account before firing, specifically when loaded with the Thermobaric Warheads. Good thing those ain´t standard issue...\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 12 kg\nTotal length: 1450 mm\nAmmunition: 84mm HEAT or Thermobaric Warhead\nCapacity: 1 rocket\n\n";
 					
 Terminal_PlasmaGun=		
 					"\cnM890 THERATORN\n\n"

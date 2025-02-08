@@ -106,7 +106,11 @@ Terminal_RocketLauncher=
 					
 Terminal_PlasmaGun=		
 					"\cnM890 THERATORN\n\n"
-					"\cj---Work in progress---";
+					"\cjThe M890 Lightweight Plasma Projection Weapon, commonly known as the Theratorn, is a direct-energy weapon that launches electrode-accelerated, magnetically-focused plasma. The M890 LPPW is the culmination of a 30-years long weapon development program, that was financed in a large part by the Union Aerospace Corporation.\nAfter dozens of prototypes, a mature design has been achieved, finally eliminating the weight issues. Unfortunately, the weapon still suffers from a considerable waste heat generation generation, mandating a careful usage in order to avoid firing accidents.\n\n"
+					"\cnAplication: \n"
+					"\cjThe plasma rifle, as it is often referred to, is a highly effective and versatile weapon. It inflicts a large amount of plasma-type damage per bolt with additional, yet small, splash damage. Its firepower is more than enough to take over most armoured infantry personne.\nThese plasma bolts are even capable of bouncing off solid surfaces, thus giving a limited indirect fire capability. The downsides are relatively slow projectiles, limited effective range and the precious ammo type that also powers many of the equipment items, as well as the overheating risk, avoiding the weapon from being fired continuously.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 5.7 kg\nTotal length: 784 mm\nRate of fire: 600 RPM\nAmmunition: plasma cells\nAmmunition Supply: 300 to 600 cells\nCapacity: 50 shots";
 					
 Terminal_PlasmaRifle=		
 					"\cnXM920 GALITSADI PLASMA LANCE\n\n"

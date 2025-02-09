@@ -110,11 +110,15 @@ Terminal_PlasmaGun=
 					"\cnAplication: \n"
 					"\cjThe plasma rifle, as it is often referred to, is a highly effective and versatile weapon. It inflicts a large amount of plasma-type damage per bolt with additional, yet small, splash damage. Its firepower is more than enough to take over most armoured infantry personne.\nThese plasma bolts are even capable of bouncing off solid surfaces, thus giving a limited indirect fire capability. The downsides are relatively slow projectiles, limited effective range and the precious ammo type that also powers many of the equipment items, as well as the overheating risk, avoiding the weapon from being fired continuously.\n\n"
 					"\cnSpecifications: \n"
-					"\cjWeight: 5.7 kg\nTotal length: 784 mm\nRate of fire: 600 RPM\nAmmunition: plasma cells\nAmmunition Supply: 300 to 600 cells\nCapacity: 50 shots";
+					"\cjWeight: 5.7 kg\nTotal length: 784 mm\nRate of fire: 600 RPM\nOperation: magnetic acceleration\nAmmunition: plasma cells\nAmmunition supply: 300 to 600 cells\nCapacity: 50 shots";
 					
 Terminal_PlasmaRifle=		
 					"\cnXM920 GALITSADI PLASMA LANCE\n\n"
-					"\cj---Work in progress---";
+					"\cjThe XM920, commonly referred to as the plasma lance, is a prototype sniper weapon of plasma-projecting variety. In essence, the Galistadi is a plasma-powered coilgun, firing ultra-focused jets of hypersonic plasma. The weapon is characterised by extreme precision, unleashing 4 mm wide-plasma bolts with accuracy no worse than 1 MOA (minutes of angle).\nThe plasma pulses are sealed using innovative phased-magnetization method, reinforcing their cohesiveness and preventing the undersirable bloom effect for longer distances than it was possible with the older plasma weapon models. In result, the Galistadi can remain effective up to 2.5 kilometers range, while delivering markedly more destructive power than the solid-ammunition sniper rifles.\n\n"
+					"\cnAplication: \n"
+					"\cjThe plasma lance is the best sniping weapon available to our personnel, delivering plasma shots of very high damage and pinpoint accuracy. It is capable of defeating practically any armor over extreme distances.\nIt also includes a firing mode selector that includes the Antimaterial Mode, which essentially loads all the energy from a plasma cell at once and fires it on a single shot, dealing devastating damage to anything in between. On the usual Antipersonnel mode, it is capable of firing a shot per 10 energy available on any cell while keeping a great damage output, even though it is not as powerful as the counterpart firemode.\nFinally, it is equipped with a targeting scope that lets the user zoom at x2, x5 and x10 magnification settings.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 8.5 kg\nTotal length: 1326 mm\nRate of fire: 20 RPM\nOperation: phased-magnetic acceleration\nAmmunition: plasma cells\nAmmunition supply: 300 to 600 cells\nCapacity: 50 energy cells";
 					
 Terminal_Flamethrower=		
 					"\cnFLAMETHROWER\n\n"

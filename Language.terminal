@@ -3,7 +3,7 @@
 Terminal_Knife = 	
 					"\cnCOMBAT KNIFE \n\n"  
 					"\cjA military-grade titanium knife. It is a sturdy cutting tool, and well-balanced enough for throwing. The laser-sharpened edge is able to inflict grievous wounds easily, which can lead to further potential damage such as internal bleeding.\nIn addition, modern variants of this knife have turned it into a fully-functional WASP knife, allowing it to fit a small cartridge of anticoagulant poison and then release it with the press of a button once the blade sinks in the target, causing massive bleeding and internal injuries.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjBeing one of the most versatile weapons available, the knife is not precisely durable but rather shines for being a fast weapon that the user can slice throught unarmored (or lightly armored even) targets with ease. It is easy to handle, meaning it will not require a huge amount of effort to control or use precisely; and it can make severe injuries with the anticoagulat blast.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 0.4 kg\nTotal length: 245 mm\nSupply: 10 to 20 knives.\nCapacity: x1 anticoagulant poison canister";
@@ -11,7 +11,7 @@ Terminal_Knife =
 Terminal_Axe = 	
 					"\cnFIRE AXE \n\n"  
 					"\cjA generic firefighting tool. It is a commonplace item around UAC establishments. The most common axe models include a carbon-fiber haft, increasing their endurance while reducing manufacturing costs compared to traditional wood axes.\nThe axe head remains pure steel, however, and it is suitable for cutting and rendering apart most obstacles found inside UAC facilities, save for reinforced bulkheads and similars.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe fire axe is capable of inflicting considerably more damage than the knife, being able to kill almost every unarmored living thing unfortunate enough to stand in the way of the steel blade with a single, decapitating chop. Logically, it is quite a cumbersome weapon and requires proper handling to use properly, thus swinging it around aimlessly will only serve to get you (the user) exhausted. Even though most people can still use it as a weapon if used properly, it is clear that the more strength the user has, the more damaging the impact will be.\nA skilled user is also capable of use it to deflect incoming attacks, a technique commongly known as parrying. Instead of grabbing the axe like a maze, you can put one hand near the end of the handle and another close (but not touching) the head of the axe, and use it effectively as a bar of sorts to push an incoming melee off the way. However, the UAC completely discourages this practise, since there have been past instances of [REDACTED].\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 3 kg\nTotal length: 550 mm";
@@ -19,7 +19,7 @@ Terminal_Axe =
 Terminal_Chainsaw = 	
 					"\cnCHAINSAW\n\n"  
 					"\cjAn industrial cutting tool of a fairly old model. The chainlink is made out of diamond tips, enabling sufficient cutting power against hard materials such as steel.\nHowever, as the need for such heavy work rarely arises, chainsaws like these are typically used for reducing forestation around UAC facilities.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjEven though the UAC doesn´t treat this tool as a weapon (and completely discourages its use as such), the chainsaw is probably the most heavy-hitting melee weapon in comparison with the axe or the knifes.\nHowever, despite having a fearsome reputation as a weapon, the chainsaw is cumbersome and relies of fuel, meaning that once it latches onto a target it will be hard to disengage therefore consuming more fuel. It is also quite noisy, thus it is definitely not a stealth weapon, so it would be better employed on lonely enemies unfortunate enough to cross sights with you.\n\n"	
 					"\cnSpecifications: \n"
 					"\cjWeight: 8 kg\nTotal length: 425 mm\nAmmunition: fuel\nAmmunition supply: 500 to 800 fuel units";
@@ -27,7 +27,7 @@ Terminal_Chainsaw =
 Terminal_Pistol = 	
 					"\cnM99 MEDIATOR\n\n"  
 					"\cjThe M99 Mediator is a standard issue USCM sidearm. This new handgun model has been adopted following an arms deal competition, conducted a few years ago.\nThe M99 offers a decent compromise between stopping power, magazine capacity and reliability. Some of the non-military UAC personnel are also trained in the usage of this handgun \n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjBeing a fairly accurate yet quite weak sidearm, the M99 has low recoil, short effective range and above-average durability, while also featuring a firemode switch to alter between single fire and 3-round burst. Since it is also lightweight and not very big, it also allows the user to swiftly pull it out without risking (much) his own integrity if the situation requires it.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 0.9 kg\nTotal length: 175 mm\nRate of fire: Semi auto | 3-round burst\nAmmunition: 9 mm pistol rounds\nAmmunition supply: 150 to 400 rounds\nCapacity: 15 rounds, +1 if already has a round chambered";
@@ -35,7 +35,7 @@ Terminal_Pistol =
 Terminal_Revolver = 	
 					"\cnKRIEGERHAND M630 BFR\n\n"  
 					"\cjThe Kriegerhand M630 BFR is a .50 magnum revolver. It is a uncommon sidearm, that has a reputation of ridiculous firepower and prohibitive weight. Its intimidation factor was embraced by some security forces and eccentric mercenaries.\nAlthough the BFR is uncomfortable to be used by ordinary soldiers, the enhanced elite operatives such as the UAC bodyguard cadre favour this weapon, as they can handle this weapon easily, and in turn the BFR packs enough punch to fend off their usual opponents – including the rival corporate agents.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe Kriegerhand offers great power and accuracy at a fairly long range. It can consistently one-shot unarmored and lightly armored enemies in a shot or two at most.\nHowever, it has some evident downsides like very potent recoil, small capacity and quite expensive ammunition that isn´t the most common by far. However, the .50 Rothogg is as rare as it is powerful, having armor-piercing capabilities more than enough to blast through almost as much as a 12-gauge shotgun would.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 2.7 kg\nTotal length: 340 mm\nOperation: double-action\nRate of fire: Semi auto\nAmmunition: .50 Rothogg\nAmmunition supply: 30 to 50 rounds\nCapacity: 5 rounds";	
@@ -43,7 +43,7 @@ Terminal_Revolver =
 Terminal_Submachinegun=
 					"\cnSTILETTO VCR-9\n\n"
 					"\cjThe Stiletto VCR-9 is a compact submachine gun . It is a lightweight weapon that achieves a cyclic rate of 1200 RPM. Typically used by the special forces operatives to carry out covert missions, most often in tandem with a suppressor attachment.\nAlthough the VCR-9 does not excel in any aspect, it is a relatively cheap submachine gun platform. Most of its body consists of mass-produced polymers, allowing the weapon to reach an acceptable compromise between endurance and affordability. Thanks to that, the Stiletto has managed to proliferate in various armed forces, such as the USMC.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe submachine gun has a high rate of fire, but mediocre accuracy. It is good for cleaning up small groups of light armored enemies but quite ineffective against advanced armored enemies. Plus, it is also quite prone to waste ammo if not used in short bursts.\nThe Stiletto also has a supressor which makes the shots more quiet and powerful, while also making the weapon somewhat more durable at the cost of it being damaged over time, the longer it has been used.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 3.8 kg\nTotal length: 600 mm\nOperation: delayed blowback\nRate of fire: 1200 RPM\nAmmunition: 9mm pistol rounds\nAmmunition supply: 150 to 400 rounds\nCapacity: 40 rounds, +1 if already has a round chambered";
@@ -51,7 +51,7 @@ Terminal_Submachinegun=
 Terminal_PumpShotgun=		
 					"\cnKAMPFMANN M650 BROOM\n\n"
 					"\cjThe Kampfmann M650 is the standard police armament of the Union Aerospace Corporation. The M650 design is a modified version of the old Remington M870 shotgun, and was aquired by the Kampfmann GmbH company (a subsidiary of the UAC) from the defunct Remington Arms.\nThe M650 is an ubiquitous weapon around UAC bases, most often wielded by the security officers. This scattegun might not be the best choice for intense firefights, but it remains as an intimidating weapon specially against unarmoured opposition.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThis shotgun is a moderately powerful weapon. It reliably kills light armoured enemies in one shot and packs enough punch to be effective against targets with higher armour grade. Its disadvantages are slow reload speed and limited range. However, unlike magazine-fed weapons, the shotgun can be easily reloaded with any amount of shells allowed by the tube magazine, without unloading required to save the remaining ammo.\nBesides, the shotgun accepts two variants of the classic 12-gauge shotgun shell, which are buckshot and slug. As its name implies, buckshot is made up a group of small pellets that scatter around the aimed area, whereas slug is made up of a single heavy-hitting projectile coated in anticoagulant poison. While slugs are more powerful and accurate than buckshot, the later is better for dealing with groups of lightly armoured enemies instead.\nHowever, it is worth noting that UAC forces generally use this shotgun with slug shells loaded rather than buckshot, since the Skallvern gets the most out of the buckshot shells and is unable to fire slugs.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 4 kg\nTotal length: 1124 mm\nOperation: pump-action\nAmmunition: 12 gauge buckshot/anticoagulant-coated slug shells\nAmmunition supply: 30 to 60 buckshot and 30 to 50 slugs.\nCapacity: 6 shells, +1 if already has one chambered";
@@ -59,7 +59,7 @@ Terminal_PumpShotgun=
 Terminal_AutoShotgun=
 					"\cnSKALLVERN-12 AUTOMATIC SHOTGUN\n\n"
 					"\cjThe Skallvern-12 is a military-grade assault shotgun. It is a strictly indoor combat weapon, which provides overwhelming firepower for shock trooper units.\nWhile its reliability is not the best, it has a somewhat low recoil and weight for this type of weapon. This shotgun´s primary purpose is to neutralize unnarmoured personnel, but sustained barrages are often enough to incapacitate moderately-armed combatants as well.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe sheer force of the Skallvern-12 is enough to take down even midly armoured enemies at close range with enough shots, and most human targets without proper armor will die at one shot or two at best in close quarters.\nHowever, long-range engagements erduce effectivity of this weapon greatly and are thus not encouraged, given how the massive pellet spread will disperse most of them before even reaching the target distance. It is also easy to eat through most of the ammo supply with ease if fired recklessly, as well as not being a particularly sturdy weapon and requiring proper, constant care when in combat in order to avoid malfunction.\nBesides this, the automatic shotgun features an electrically implemented module for recycling combusted gas (called the gas recycler), which allows it to release a blast of hot, compressed air powerful enough to hurt by itself at close range and also boost the potential damage of the ejected pellets in that shot. This comes at the cost of potentially deteriorating the Skallvern barrel, so it also incorporates a toggleable switch to turn it on and off at will.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 6.2 kg\nTotal length: 888 mm\nOperation: gas operated\nRate of fire: 300 RPM\nAmmunition: 12 gauge buckshot shells\nAmmunition supply: 30 to 60 buckshot shells.\nCapacity: 20 shells, +1 if already has a round chambered";
@@ -67,7 +67,7 @@ Terminal_AutoShotgun=
 Terminal_Rifle=		
 					"\cnORTHOS M360 BINARY COMBAT RIFLE\n\n"
 					"\cjThe Akasuke M360 binary combat rifle, also known as the Orthos, is a new hybrid infantry rifle model introduced by the USMC. It was adopted due to the combined reasons of simplifying field logistics and increasing the versatility of a single weapon model. Externally, the M360 Orthos resembles many combat rifles of its size, but its unique function is hidden in its internal mechanism: the rechambering process.\nAs a hybrid weapon, the Orthos is able to adjust its caliber on the field, shifting the working parts and bore size to accept either the 7.62 mm full rifle cartridge, or the 4.73 mm intermediate load. Thanks to this ability, the Orthos offers its wielder an effective and rapid response to a wide range of threats.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjCombining decent firepower and accuracy, the binary combat rifle is one of the most versatile weapons out there, a feature emphasized by the rechambering feature. The 4.73 mm can be employed for faster fire rate at the cost of being less accurate and somewhat weak when compared to the 7.62 mm that also packs a heavier punch instead of firing as rapidly. To properly rechamber the rifle, it must be completely unloaded beforehand.\nIn addition to that, the M360 also includes compatibility features with the ETC module, which increases the performance of the rifle by boosting the potential damage of the bullets using plasma charges. It can be reloaded using standard plasma cells, and the remaining power can be judged by looking at the intensity of the glowing blue light. To fully recharge the ETC module, you will need 15 plasma cells.\n\n"
 					"\cnSpecifications: \n"
 					"cjWeight: 4.9 kg\nTotal length: 934 mm\nOperation: gas operated, includes electrothermal-chemical operation compatibility with remote plasma injection method\nRate of fire: 360 RPM with 7.62 mm rounds, 540 RPM with 4.73 mm rounds\nAmmunition: 4.73 mm / 7.62 mm rounds\nAmmunition supply: 150 to 300 rounds of 7.62 mm, 200 to 500 rounds of 4.73mm\nCapacity: 30 rounds, +1 when has a round chambered already";
@@ -75,7 +75,7 @@ Terminal_Rifle=
 Terminal_Machinegun=		
 					"\cnVUURKAG SW-24\n\n"
 					"\cjThe Vuurkag S2-24 is a general-purpose machine gun. It is a support role weapon that is intended to be operated from a mounted position, but some of the sufficiently trained personnel are able to fire it handheld as well.\nAlthought it is a crude weapon (known amongst operators as the Boar), it is also relatively durable, contributing to its popularity amongst various armed forces.\nUniquely for a machine gun, the SW-24 accepts underslug attachments, including grenade launchers of various calibers. The Vuurkrag combined with such an attachment is a force to be reckoned with in open firefights - being able to deal with the large groups of hostile personnel, as well are repelling an occasional moderately-armored aggressor.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe machine gun is a vicious weapon that can sustain long volleys of automatic fire. In addition, the underside grenade launcher offers an extra explosive punch in case a bigger enemy needs to be dealt with quickly.\nHowever, the underside grenade launcher only holds a single grenade on it, and the machine gun itself suffers from low accuracy when fighting at long distances, thus encouraging CQC. It is also quite evident that this gun consumes ammo fast when fired recklessly, so it will burn through the reserves of a careless user.\nStill, the Vuurkrag is one of the best weapons in regard of raw power than any operator could get hands on, since it relies on pretty common ammunition and it is effective in almost any situation.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 12 kg\nTotal length: 1104 mm\nOperation: gas operated\nRate of fire: 720 RPM\nAmmunition: 7.62 mm cartridge and accepts grenades for the underbarrel launcher\nAmmunition supply: 150 to 300 rounds of 7.62mm, and hand grenades.\nCapacity: 100 rounds of 7.62, +1 if already chambered; 1 grenade";
@@ -83,7 +83,7 @@ Terminal_Machinegun=
 Terminal_Minigun=		
 					"\cnXM-214 MICROGUN\n\n"
 					"\cjThe XM-214 microgun is a company-level support weapon. It is a rotatory machine gun, powered by an electric motor. The microgun primary purpose is to lay down suppressive fire of extraordinary volume, for when the slower machine gun are not enough to deter an amassed attack.\nThe XM-214 features an external ammo canister with integrated ammo belt connection, for the maximum practical rate of fire. To address the weight concerns, the XM-214 external frame is built from titanium, decreasing the weapon´s weight under 20 kilograms.\nAn extra weapon extension exists for this microgun, which is a powered support harness. This contraption provides advanced fire control and recoil nullification systems, in addition of serving as a partial exoskeleton to help the shooter with the gun weight. With the harness mounted, the XM-214 becomes much easier to handle and its strain on the operator does not exceed the one incurred by a typical light machine gun.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe microgun needs a brief spin-up time of around a second, but offers an unparalleled volume of fire. It easily massacres almost any infantry personnel stading in front of its 6 barrels in no time.\nThis comes at the evident cost of insane ammo consumption and overwhelming recoil, which is enough to make the gun uncontrollable unless fired in short bursts. Due to its ammo consumption rate, the microgun is recommended to be reserved only for the most dangerous hostiles.\nIt is also possible to fire a dual quick burst with a secondary trigger, capable of tearing through the most heavy infantry armor like it is paper.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 16.8 kg\nTotal length: 763 mm\nOperation: rotary breech\nRate of fire: 2100 RPM\nAmmunition: 4.73 mm cartridge\nAmmunition supply: 200 to 500 rounds\nCapacity: draws ammo straight from the supply";
@@ -91,7 +91,7 @@ Terminal_Minigun=
 Terminal_GrenadeLauncher=		
 					"\cnCHIMERA MULTI-PURPOSE LAUNCHER\n\n"
 					"\cjThe Akasuke MPGL-5 (Multi-Purpose Grenade Launcher), also known as Chimera, is a special launcher-type weapon. Resembling a typical revolver grenade launcher, the Chimera is an unprecedentedly complex handheld launcher platform.\nCombining pneumatic and propellant-based ignition systems, along with adjustable breech size and electronic fire control, the Chimera is able to launch virtually any kind of material that fits into the firing chamber. This makes it a popular weapon amongst paramilitary, terrorist and guerrilla groups that are short on money for the regular ordnance.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe grenade launcher is a versatile weapon that enables to fire multiple ammo types, some even could be considered straightforward junk. It is a dependable weapon that can deal with a plethora of situations, being able to use conventional grenades, cluster munitions, stims, metal scraps and so on.\nIt is usually encouraged to experiment around (in a safe environment) with the different kinds of ammunition to see which one fits each situation the best.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 7.4 kg\nTotal length: 680 mm\nOperation: pneumatic/conventional pump-action with electronic fire controls\nAmmunition: flares, scrap metal, grenades of all kinds...\nCapacity: 6 rounds of whatever is put in the firing barrels";
@@ -99,7 +99,7 @@ Terminal_GrenadeLauncher=
 Terminal_RocketLauncher=		
 					"\cnVALKYR AT-80\n\n"
 					"\cjThe SMAVW-3, or Shoulder Mounted Anti-Vehicle Weapon, is the USMC standard anti-armor armament. Better known as the AT-80, the Valkyr is an 84mm caliber recoiless rifle widely used against enemy ground vehicles, low-altitude aircraft and battlebots.\nIt is equipped with a propietary hyper-propulsion system, providing a speed-boost to its shells - reaching a top speed of a thousand meters per second - and further increasing their penetration capability.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe rocket launcher is a mainstay anti-tank weapon that can blow up most kinds of enemies with a single shot. The rockets are highly devastating and completely ignore amor, making them ideal for facing heavyweight targets like vehicles.\nHowever, it is not a common weapon and it is slow to reload, meaning the user must make each shot count. Splash damage from the explosiong must be taken into account before firing, specifically when loaded with the Thermobaric Warheads. Good thing those ain´t standard issue...\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 12 kg\nTotal length: 1450 mm\nAmmunition: 84mm HEAT or Thermobaric Warhead\nCapacity: 1 rocket\n\n";
@@ -107,7 +107,7 @@ Terminal_RocketLauncher=
 Terminal_PlasmaGun=		
 					"\cnM890 THERATORN\n\n"
 					"\cjThe M890 Lightweight Plasma Projection Weapon, commonly known as the Theratorn, is a direct-energy weapon that launches electrode-accelerated, magnetically-focused plasma. The M890 LPPW is the culmination of a 30-years long weapon development program, that was financed in a large part by the Union Aerospace Corporation.\nAfter dozens of prototypes, a mature design has been achieved, finally eliminating the weight issues. Unfortunately, the weapon still suffers from a considerable waste heat generation generation, mandating a careful usage in order to avoid firing accidents.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe plasma rifle, as it is often referred to, is a highly effective and versatile weapon. It inflicts a large amount of plasma-type damage per bolt with additional, yet small, splash damage. Its firepower is more than enough to take over most armoured infantry personne.\nThese plasma bolts are even capable of bouncing off solid surfaces, thus giving a limited indirect fire capability. The downsides are relatively slow projectiles, limited effective range and the precious ammo type that also powers many of the equipment items, as well as the overheating risk, avoiding the weapon from being fired continuously.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 5.7 kg\nTotal length: 784 mm\nRate of fire: 600 RPM\nOperation: magnetic acceleration\nAmmunition: plasma cells\nAmmunition supply: 300 to 600 cells\nCapacity: 50 shots";
@@ -115,14 +115,18 @@ Terminal_PlasmaGun=
 Terminal_PlasmaRifle=		
 					"\cnXM920 GALITSADI PLASMA LANCE\n\n"
 					"\cjThe XM920, commonly referred to as the plasma lance, is a prototype sniper weapon of plasma-projecting variety. In essence, the Galistadi is a plasma-powered coilgun, firing ultra-focused jets of hypersonic plasma. The weapon is characterised by extreme precision, unleashing 4 mm wide-plasma bolts with accuracy no worse than 1 MOA (minutes of angle).\nThe plasma pulses are sealed using innovative phased-magnetization method, reinforcing their cohesiveness and preventing the undersirable bloom effect for longer distances than it was possible with the older plasma weapon models. In result, the Galistadi can remain effective up to 2.5 kilometers range, while delivering markedly more destructive power than the solid-ammunition sniper rifles.\n\n"
-					"\cnAplication: \n"
+					"\cnApplication: \n"
 					"\cjThe plasma lance is the best sniping weapon available to our personnel, delivering plasma shots of very high damage and pinpoint accuracy. It is capable of defeating practically any armor over extreme distances.\nIt also includes a firing mode selector that includes the Antimaterial Mode, which essentially loads all the energy from a plasma cell at once and fires it on a single shot, dealing devastating damage to anything in between. On the usual Antipersonnel mode, it is capable of firing a shot per 10 energy available on any cell while keeping a great damage output, even though it is not as powerful as the counterpart firemode.\nFinally, it is equipped with a targeting scope that lets the user zoom at x2, x5 and x10 magnification settings.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 8.5 kg\nTotal length: 1326 mm\nRate of fire: 20 RPM\nOperation: phased-magnetic acceleration\nAmmunition: plasma cells\nAmmunition supply: 300 to 600 cells\nCapacity: 50 energy cells";
 					
 Terminal_Flamethrower=		
 					"\cnFLAMETHROWER\n\n"
-					"\cj---Work in progress---";
+					"\cjThe AT300 Overgrowth Control Incinerator or, as it is usually referred to, the Salamander; is a liquid-based flamethrower that fires a stream of ulthorene fuel that is ignited by a hydrogen torch.\nNormally a deforestation tool, in truth the Salamander is a secret terror weapon, deployed against the specially hated enemies of [REDACTED]. The regular military forces recognise the appalling reputation of the fire-based weapons, and intend to phase them out in favor of the more advanced and "cleaner" plasma weaponry.\nHowever, due to low cost and effectivity, the handheld flamethrowers could be used against [REDACTED].\n\n"
+					"\cnApplication: \n"
+					"\cjAn incredibly brutal weapon, the flamethrower excels at executing unarmoured enemies, immolating unprotected infantry with ease. Bigger and better shielded enemies require more fuel, but they will eventually crumble under the insane heat of this weapon.\nSome of its downsides would be the short range, uncommon ammo and specially the very dangerous handling, both in the normal spray mode and the alternative burst mode.\n\n"
+					"\cnSpecifications: \n"
+					"\cjWeight: 15.5 kg\nTotal length: 765 mm\nOperation: liquid pump with a hydrogen torch ignition method\nAmmunition: fuel \nAmmunition supply: 500 to 800 fuel units";
 					
 Terminal_9mm=
 					"\cn9x19MM PARABELLUM\n\n"

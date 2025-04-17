@@ -127,7 +127,9 @@ Terminal_Flamethrower=
 					"\cjAn incredibly brutal weapon, the flamethrower excels at executing unarmoured enemies, immolating unprotected infantry with ease. Bigger and better shielded enemies require more fuel, but they will eventually crumble under the insane heat of this weapon.\nSome of its downsides would be the short range, uncommon ammo and specially the very dangerous handling, both in the normal spray mode and the alternative burst mode.\n\n"
 					"\cnSpecifications: \n"
 					"\cjWeight: 15.5 kg\nTotal length: 765 mm\nOperation: liquid pump with a hydrogen torch ignition method\nAmmunition: fuel \nAmmunition supply: 500 to 800 fuel units";
-					
+
+// DONE UNTIL HERE - All terminals up here belong to the weapon section, rest are undone.
+
 Terminal_9mm=
 					"\cn9x19MM PARABELLUM\n\n"
 					"\cj---Work in progress---";
@@ -174,4 +176,135 @@ Terminal_gas=
 					
 Terminal_explosives=		
 					"\cnEXPLOSIVES\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_bandages=
+					"\cnBANDAGES AND FIRST AID\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_stimpack=
+					"\cnSTIMPACKS AND PAINKILLERS\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_medikit= 
+					"\cnPORTABLE MEDIKIT\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_medicalBackpack=
+					"\cnADVANCED HEALING UTILS\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_armorShard=
+					"\cnARMOR SHARDS\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_armorShardBox=
+					"\cnARMOR MODULARITY AND REPAIRING\n\n"
+					"\cj---Work in progress---";					
+Terminal_bandolier=
+					"\cnBANDOLIER\n\n"
+					"\cj---Work in progress---";					
+Terminal_backpacks=
+					"\cnBACKPACKS\n\n"
+					"\cj---Work in progress---";					
+Terminal_uniformUAC=
+					"\cnUAC STANDARD SUIT\n\n"
+					"\cj---Work in progress---";					
+Terminal_helmetUAC=
+					"\cnUAC STANDARD HELMET\n\n"
+					"\cj---Work in progress---";					
+Terminal_bootsUAC=
+					"\cnUAC STANDARD BOOTS\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_survivalistLight=
+					"\cnSURVIVALIST LIGHT ARMOR\n\n"
+					"\cj---Work in progress---";
+					
+Terminal_soldierLight=
+					"\cnSOLDIER LIGHT ARMOR\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_medicMedium=
+					"\cnFIELD MEDIC MEDIUM ARMOR\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_rangerMedium=
+					"\cnRANGER MEDIUM ARMOR\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_berserkHeavy=
+					"\cnBERSERKER HEAVY ARMOR\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_demomanHeavy=
+					"\cnDEMOMAN HEAVY ARMOR\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_junk=
+					"\cnJUNK AND SCRAP MATERIALS\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_vialBottles=
+					"\cnLIQUID MATERIALS\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_survivalKit=
+					"\cnSURVIVALIST KIT\n\n"
+					"\cj---Work in progress---";
+								
+Terminal_recombiner=
+					"\cnPORTABLE RECOMBINER\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_rockStim=
+					"\cnROCK SKIN STIMULANT\n\n"
+					"\cj---Work in progress---";
+										
+Terminal_adamantStim=
+					"\cnADAMANTINE SKIN STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_berserkStim=
+					"\cnBERSERK STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_berserkPack=
+					"\cnBERSERK PACK\n\n"
+					"\cj---Work in progress---";	
+					
+Terminal_healingStim=
+					"\cnHEALING STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_potentHealingStim=
+					"\cnPOTENT HEALING STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_chaosStim=
+					"\cnCHAOS STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_staminaStim=
+					"\cnSTAMINA STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_rampageStim=
+					"\cnRAMPAGE STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_demonPheromones=
+					"\cnDEMON PHEROMONES\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_predatorStim=
+					"\cnPREDATOR STIMULANT\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_antidote=
+					"\cnANTIDOTE\n\n"
+					"\cj---Work in progress---";
+															
+Terminal_antiHazard=
+					"\cnANTI HAZARD STIMULANT\n\n"
 					"\cj---Work in progress---";
